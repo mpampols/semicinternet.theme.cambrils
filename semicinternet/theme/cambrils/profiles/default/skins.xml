@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<object name="portal_skins" allow_any="False" cookie_persistence="False"
+        default_skin="SEMIC Internet Theme Cambrils">
+ 
+ <!-- -*- extra stuff goes here -*- -->
+ 
+ <object name="cambrils_images"
+         meta_type="Filesystem Directory View"
+         directory="semicinternet.theme.cambrils:skins/cambrils_images"/>
+
+ <object name="cambrils_templates"
+         meta_type="Filesystem Directory View"
+         directory="semicinternet.theme.cambrils:skins/cambrils_templates"/>
+
+ <object name="cambrils_styles"
+         meta_type="Filesystem Directory View"
+         directory="semicinternet.theme.cambrils:skins/cambrils_styles"/>
+
+ <object name="cambrils_javascripts"
+         meta_type="Filesystem Directory View"
+         directory="semicinternet.theme.cambrils:skins/cambrils_javascripts"/>
+
+ <skin-path name="SEMIC Internet Theme Cambrils" based-on="Sunburst Theme">
+  <!-- -*- extra layer stuff goes here -*- -->
+  <layer name="cambrils_images" insert-after="custom"/>
+  <layer name="cambrils_templates" insert-after="custom"/>
+  <layer name="cambrils_styles" insert-after="custom"/>
+  <layer name="cambrils_javascripts" insert-after="custom"/>
+ </skin-path>
+
+</object>

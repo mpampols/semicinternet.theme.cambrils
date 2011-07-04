@@ -1,0 +1,8 @@
+#main{width:960px;height:238px;position:relative;}
+.navi {cursor:pointer;height:15px;}
+.navi a {outline:none;background-color:#E3E3E3;border-radius:7px;box-shadow:0 1px 1px 1px #252525 inset;display:block;float:left;font-size:1px;height:10px;margin:3px;width:10px;}
+.navi a.active {background-color:#3A678D;box-shadow:0 1px 1px 1px #252525 inset;}
+.navi a:hover {background-color:#3A678D;box-shadow:0 1px 1px 1px #252525 inset;}
+.scrollable {height:238px;overflow:hidden;position:relative;width:960px;}
+.item {cursor:pointer;float:left;height:238px;width:960px;}
+.scrollable .items {clear:both;position:absolute;width:20000em;}

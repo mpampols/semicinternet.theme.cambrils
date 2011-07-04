@@ -1,0 +1,30 @@
+Metadata-Version: 1.0
+Name: semicinternet.theme.cambrils
+Version: 1.0
+Summary: A free Plone theme from SEMIC Internet for Plone 4
+Home-page: UNKNOWN
+Author: Marc Pampols
+Author-email: mpampols@semicinternet.com
+License: GPL
+Description: Introduction
+        ============
+        
+        How to customize the main header logo
+        ---------------------------------
+        You must change the logo.png image file in:
+        semicinternet.theme.cambrils/semicinternet/theme/camrils/skins/cambrils_images
+        
+        
+        
+        Changelog
+        =========
+        
+        1.0dev (unreleased)
+        -------------------
+        
+        - Initial release
+        
+Keywords: semic internet plone theme
+Platform: UNKNOWN
+Classifier: Framework :: Plone
+Classifier: Programming Language :: Python

@@ -1,0 +1,30 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="semicinternet.theme.cambrils">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="SEMIC Internet Theme Cambrils"
+      directory="profiles/default"
+      description='Extension profile for the "SEMIC Internet Theme Cambrils" Plone theme.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="Uninstall Cambrils Theme"
+      directory="profiles/uninstall"
+      description='Uninstallation profile for Cambrils Plone theme.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:importStep
+      name="semicinternet.theme.cambrils.various"
+      title="SEMIC Internet Theme Cambrils: miscellaneous import steps"
+      description="Various import steps that are not handled by GS import/export handlers."
+      handler="semicinternet.theme.cambrils.setuphandlers.setupVarious">
+    <depends name="skins"/>
+  </genericsetup:importStep>
+
+</configure>

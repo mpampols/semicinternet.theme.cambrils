@@ -1,0 +1,17 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    i18n_domain="semicinternet.theme.cambrils">
+
+  <!-- File System Directory Views registration -->
+  <cmf:registerDirectory name="cambrils_images"/>
+  <cmf:registerDirectory name="cambrils_templates"/>
+  <cmf:registerDirectory name="cambrils_styles"/>
+  <cmf:registerDirectory name="cambrils_javascripts"/>
+
+  <!-- Note: This could also be done for all folders at once
+       by replacing the previous lines with this one:
+  <cmf:registerDirectory name="skins" directory="skins" recursive="True" />
+  -->
+
+</configure>

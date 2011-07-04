@@ -1,0 +1,80 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="semicinternet.theme.cambrils">
+
+  <include package="plone.app.registry" />
+
+  <browser:page
+      for="*"
+      name="hp_view"
+      class=".homepage.Homepage"
+      layer=".interfaces.IThemeSpecific"
+      permission="zope2.View"
+      />
+
+  <interface
+      interface=".interfaces.IThemeSpecific"
+      type="zope.publisher.interfaces.browser.IBrowserSkinType"
+      name="SEMIC Internet Theme Cambrils"
+      />
+
+  <!-- Viewlets registration -->
+
+  <!-- Zope 3 browser resources -->
+
+  <browser:resourceDirectory
+      name="cambrils.images"
+      directory="images"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+  <browser:resourceDirectory
+      name="cambrils.stylesheets"
+      directory="stylesheets"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+  <browser:viewlet
+      name="plone.site_actions"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class="plone.app.layout.viewlets.common.SiteActionsViewlet"
+      layer=".interfaces.IThemeSpecific"
+      permission="zope2.View"
+       />
+
+  <browser:viewlet
+      name=".theme.cambrils.global_sections"
+      manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+      class=".viewlets.GlobalSectionsViewlet"
+      layer=".interfaces.IThemeSpecific"
+      permission="zope2.View"
+      />
+
+  <browser:viewlet
+      name=".theme.cambrils.footer"
+      manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+      template="templates/footer.pt"
+      layer=".interfaces.IThemeSpecific"
+      permission="zope2.View"
+      />
+
+  <browser:viewlet
+      name="plone.searchbox"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      template="templates/searchbox.pt"
+      layer=".interfaces.IThemeSpecific"
+      class="plone.app.layout.viewlets.common.SearchBoxViewlet"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      name="cambrils-settings"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".controlpanel.CambrilsSettingsControlPanel"
+      permission="cmf.ManagePortal"
+      />
+
+  <!-- -*- extra stuff goes here -*- -->
+
+</configure>

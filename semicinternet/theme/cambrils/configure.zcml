@@ -1,0 +1,30 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="semicinternet.theme.cambrils">
+
+  <five:registerPackage package="." initialize=".initialize" />
+
+  <include package="plone.app.registry" />
+  <include package="plone.app.z3cform" />
+  <include package=".browser" />
+
+  <i18n:registerTranslations directory="locales" />
+
+  <include file="skins.zcml" />
+  <include file="profiles.zcml" />
+
+  <!-- -*- extra stuff goes here -*- -->
+
+  <genericsetup:registerProfile
+      name="default"
+      title="SEMIC Internet Theme Cambrils"
+      description="Custom settings for Cambrils"
+      directory="profiles/default"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+</configure>

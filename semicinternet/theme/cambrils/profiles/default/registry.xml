@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<registry>
+  <records interface="semicinternet.theme.cambrils.browser.interfaces.ICambrilsSettings" />
+</registry>
