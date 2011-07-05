@@ -8,21 +8,28 @@ Author-email: mpampols@semicinternet.com
 License: GPL
 Description: Introduction
         ============
+        Cambrils is a simple, clean and robust Plone 4 Theme, it has been build to validate both, CSS and XHTML 1.0 Strict code.
         
-        How to customize the main header logo
-        ---------------------------------
-        You must change the logo.png image file in:
-        semicinternet.theme.cambrils/semicinternet/theme/camrils/skins/cambrils_images
-        
-        
-        
+        Main features
+        =============
+        - You can build 1, 2 or 3 column sections with side portlets
+        - XHTML 1.0 Strict validated
+        - Automatic header slideshow with customizable images folder via Plone Control Panel
+        - Highly customizable 
+        - Customizable copyright and website information via Plone Control Panel
         Changelog
         =========
         
-        1.0dev (unreleased)
+        1.0
         -------------------
         
-        - Initial release
+        - Initial pulic release
+        
+        
+        0.9
+        -------------------
+        
+        - Initial internal release
         
 Keywords: semic internet plone theme
 Platform: UNKNOWN

@@ -1,17 +1,20 @@
 Introduction
 ============
+Cambrils is a simple, clean and robust Plone 4 Theme, it has been build to validate both, CSS and XHTML 1.0 Strict code.
 
-How to add images to the header slideshow
------------------------------------------
-For slideshow to work you must create a new folder with he id: "slideshow" in
-the site root, and then upload some 960x238 images.
+Main features
+=============
+- XHTML 1.0 Strict validated.
+- Tested in the most popular browsers.
+- You can build 1, 2 or 3 column sections with side portlets.
+- Automatic header slideshow with customizable images folder via Plone Control Panel.
+- Highly customizable, tested in a wide range of different viewlets and portlets combinations and positions.
+- Customizable copyright and website information via Plone Control Panel.
 
-If you need to change the name of the slideshow container folder, you must edit:
-semicinternet.theme.cambrils/semicinternet/theme/cambrils/browser/templates/global_sections.pt
-
-changing the function value slideshow from:
-hp_view.getSlideshowImageItems('slideshow')
-and:
-hp_view.getSlideshowImages('slideshow')
-
-
+Tested in browsers
+==================
+- Firefox 4.0+
+- Opera 10+
+- Chrome 12+
+- Safari 5
+- IE 8+

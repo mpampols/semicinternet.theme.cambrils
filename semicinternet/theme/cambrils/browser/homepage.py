@@ -30,11 +30,10 @@ class Homepage(BrowserView):
         self.portal = getToolByName(self.context, "portal_url").getPortalObject()
 
     def getSlideshowImages(self,
-                           folder_id,
                            num_items=DEFAULT_NUMBER_OF_ITEMS):
         urltool = getToolByName(self, 'portal_url')
         catalog = getToolByName(self, 'portal_catalog')
-        section_path = urltool.getPortalPath() + '/' + folder_id
+        section_path = urltool.getPortalPath() + '/' + self.getSlideshowFolder()
 
         query_result = catalog({'Type':{'query':['Image','ATImage']},
                                 'path':{'query':section_path,'level':0},
@@ -45,11 +44,10 @@ class Homepage(BrowserView):
         else:
             return False
 
-    def getSlideshowImageItems(self,
-                               folder_id):
+    def getSlideshowImageItems(self):
         urltool = getToolByName(self, 'portal_url')
         catalog = getToolByName(self, 'portal_catalog')
-        section_path = urltool.getPortalPath() + '/' + folder_id
+        section_path = urltool.getPortalPath() + '/' + self.getSlideshowFolder()
         query_result = catalog({'Type':{'query':['Image','ATImage']},
                                 'path':{'query':section_path,'level':0},
                               })

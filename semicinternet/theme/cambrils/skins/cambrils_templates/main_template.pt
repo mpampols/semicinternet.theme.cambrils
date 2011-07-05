@@ -1,7 +1,7 @@
 <metal:page define-macro="master">
   <tal:doctype tal:replace="structure string:&lt;!DOCTYPE html PUBLIC
-  &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;
-  &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;" />
+  &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;
+  &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;" />
   <html xmlns="http://www.w3.org/1999/xhtml" 
     tal:define="portal_state context/@@plone_portal_state;
         context_state context/@@plone_context_state;
@@ -60,7 +60,7 @@
           </metal:portlets>
         </div>
       </tal:notajax>
-      <div id="maincolumn" tal:attributes="class string:l$sl r$sr">
+      <div id="maincolumn" tal:attributes="class string:l${sl}r${sr}">
         <div id="viewlet-above-content" tal:content="structure provider:plone.abovecontent" tal:condition="not:ajax_load" />
         <metal:block define-slot="content">
           <div metal:define-macro="content"

@@ -1,13 +1,13 @@
 /* <dtml-with base_properties> (do not remove this :) */
 /* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */ 
 /* Stylesheet for the 'SEMIC Internet - Plone Theme 01' Plone theme */
-body {font-family:Arial, Verdana, sans-serif !important;background-color:#ffffff;}
+body {font-family:Arial, Verdana, sans-serif !important;background-color:#ffffff;color:#333333;}
 a {text-decoration:none;color:#0c5390;}
 a:hover {text-decoration:none;color:#f99734;}
 a:link, a:visited{color:#0c5390;}
 h1,h2,h3,h4,h5,h6 {font-weight:normal;margin:0;padding:0;color:#333333;font-family:Georgia, Helvetica, Arial, Verdana, sans-serif;line-height:1.2em;}
 h1, h2 {letter-spacing:-0.05em;}
-h1 {font-size:2em;}
+h1 {font-size:3em;}
 h2 {font-size:1.75em;}
 h3 {font-size:1.55em;}
 h4 {font-size:1.25em;}
@@ -26,48 +26,46 @@ li {list-style-type:none;display:inline;line-height:1.6em;}
 
 /*HEADER*/
 #header{width:960px;margin:0 auto 20px auto;text-align:left;}
-#header #portal-header{}
 #header #portal-header #portal-logo{float:left;display:inline;text-align:left;margin:10px 0px !important;}
-#header #portal-header #portal-languageselector {background-color:#FFFFFF;margin:6px 0 0;padding:0;float:none;}
+#header #portal-header #portal-languageselector {background-color:#FFFFFF;margin:6px 0 0;padding:0;float:none;font-size:80%;}
 #header #portal-header #portal-languageselector li {margin-right:2px;}
-#header #portal-header #portal-languageselector li a {font-size:12px;color:#3A678D;border-radius:3px 3px 3px 3px;background-color:#ffffff;padding:2px 6px;}
+#header #portal-header #portal-languageselector li a {color:<dtml-var global_color>;border-radius:3px 3px 3px 3px;background-color:#ffffff;padding:2px 6px;}
 #header #portal-header #portal-languageselector li a:hover,
-#header #portal-header #portal-languageselector li.currentLanguage a {font-size:12px;color:#FFFFFF;border-radius:3px 3px 3px 3px;background-color:<dtml-var global_color>;padding:2px 6px;}
-#header #portal-header #portal-personaltools {background:none repeat scroll 0 0 #CCCCCC;border-bottom-left-radius:0.5em;border-bottom-right-radius:0.5em;float:right;font-size:75%;padding:0.25em 0.5em;position:relative;right:0;top:0;z-index:3;}
+#header #portal-header #portal-languageselector li.currentLanguage a {color:#FFFFFF;border-radius:3px 3px 3px 3px;background-color:<dtml-var global_color>;padding:2px 6px;}
+#header #portal-header #portal-personaltools {background:#cccccc;border-bottom-left-radius:0.5em;border-bottom-right-radius:0.5em;float:right;font-size:75%;padding:0.25em 0.5em;position:relative;right:0;top:0;z-index:3;}
 #header #portal-header #portal-personaltools dl.actionMenu.activated dd {border-radius:0.5em 0em 0.5em 0.5em;min-width:100%;position:absolute;top:30px;width:auto;}
 #header #portal-header #portal-personaltools dd a:hover {border-radius:0.5em 0.5em 0.5em 0.5em;}
 #header #portal-header #portal-personaltools dt {font-weight:normal;}
 #header #portal-header #portal-personaltools dt.actionMenuHeader a:after {content:"▼";}
 #header #portal-header #portal-personaltools dd {right:0;padding-top:0.5em;}
-#header #portal-header #portal-personaltools dd {background:#CCCCCC;padding-bottom:0.5em;}
+#header #portal-header #portal-personaltools dd {background:#cccccc;padding-bottom:0.5em;}
 #header #portal-header #portal-personaltools dd a {line-height:2em;padding:0 0.75em;}
-#header #portal-header #portal-personaltools dd a:hover {background:#205c90;color:White;}
-#header #portal-header #portal-globalnav{margin:0;padding:0;position:relative;line-height:18px;width:100%;clear:both;background:#3a678d;height:36px;line-height:36px;font-size:12px;font-weight:bold;margin-bottom:1px;}
-#header #portal-header #portal-globalnav li {float:left;display:inline;position:relative;line-height:36px;font-size:12px;border-right:solid 1px #fff;}
-#header #portal-header #portal-globalnav li a {min-width:0px;border:none;display:block;background:#3a678d;color:#fff;text-shadow:1px 1px 2px #000000;text-decoration:none;padding:0 15px 0;} 
+#header #portal-header #portal-personaltools dd a:hover {background:#205c90;color:#ffffff;}
+#header #portal-header #portal-globalnav{margin:0;padding:0;position:relative;line-height:18px;width:100%;clear:both;background:<dtml-var global_color>;height:36px;line-height:36px;font-size:80%;font-weight:bold;margin-bottom:1px;}
+#header #portal-header #portal-globalnav li {float:left;display:inline;position:relative;line-height:36px;border-right:solid 1px #fff;}
+#header #portal-header #portal-globalnav li a {min-width:0px;border:none;background:<dtml-var global_color>;color:#fff;text-shadow:1px 1px 2px #000000;text-decoration:none;padding:0 15px 0;} 
 #header #portal-header #portal-globalnav li a:hover, 
 #header #portal-header #portal-globalnav li.selected a {color:#fff;text-shadow:#b86d21 1px 1px 0;background:#e98a2a;}
-#header #slideshow{border-bottom:1px solid #F99734;border-top:1px solid #F99734;padding:1px 0;}
+#header #slideshow{border-bottom:1px solid #F99734;border-top:1px solid #F99734;padding:1px 0;clear:both;}
 #header #portal-siteactions {font-size:85%;padding-bottom:2em;text-align:center;}
 #header #portal-siteactions li {margin-right:0.5em;}
 #header #portal-siteactions li a:hover {color:#75ad0a}
 
-
 /*CONTAINER*/
-#container{width:960px;margin:0 auto;text-align:left;}
+#container {width:960px;margin:0px auto;text-align:left;}
 #container #leftcolumn{float:left;display:inline;width:200px;margin-right:30px}
 #container #rightcolumn{float:right;display:inline;width:200px;}
-#container #maincolumn.lFalse.rFalse{width:960px}
-#container #maincolumn.lTrue.rTrue{width:500px;float:left;display:inline;}
-#container #maincolumn.lTrue.rFalse,
-#container #maincolumn.lFalse.rTrue{width:730px;float:left;display:inline;}
-#container #maincolumn h1.documentFirstHeading{margin-top:0;font-size:40px;letter-spacing:-1px;line-height:46px;margin-bottom:20px;}
+#container .lFalserFalse{width:960px}
+#container .lTruerTrue{width:500px;float:left;display:inline;}
+#container .lTruerFalse,
+#container .lFalserTrue{width:730px;float:left;display:inline;}
+#container #maincolumn h1.documentFirstHeading{margin-top:0;letter-spacing:-1px;line-height:46px;margin-bottom:20px;}
 #container #maincolumn #content{margin:0px;}
 #container #maincolumn #content #content-core{margin:20px 0px;}
 #container #maincolumn #content dt {font-weight:bold;margin-bottom:0;margin-right:0;}
 #container #maincolumn #content dd {/*margin:0 0 1em 2em;*/}
-#container #maincolumn #content pre {background-color:#222222;color:White;padding:1em;overflow-x:auto;font-size:90%;margin-bottom:1em;line-height:1.25em;font-family:Consolas,Inconsolata,Menlo,"DejaVu Sans Mono","Bitstream Vera Sans Mono","Courier New",monospace;}
-#container #maincolumn #content pre.python {background-color:White;}
+#container #maincolumn #content pre {background-color:#222222;color:#ffffff;padding:1em;overflow-x:auto;font-size:90%;margin-bottom:1em;line-height:1.25em;font-family:Consolas,Inconsolata,Menlo,"DejaVu Sans Mono","Bitstream Vera Sans Mono","Courier New",monospace;}
+#container #maincolumn #content pre.python {background-color:#ffffff;}
 #container #maincolumn #content code {}
 #container #maincolumn #content div.documentByLine {font-size:100%;display:block;color:#666666;}
 #container #maincolumn #content .discreet,
@@ -78,13 +76,13 @@ li {list-style-type:none;display:inline;line-height:1.6em;}
 #container #maincolumn #content table {text-align:left;border-collapse:collapse;border-spacing:0px;}
 #container #maincolumn #content .documentDescription,
 #container #maincolumn #content #description {color:#666666;margin-left:0;font-weight:bold;font-size:1.25em;}
-#container #maincolumn #content .tileItem{border-bottom:1px solid #CCCCCC;font-size:12px;line-height:18px;margin-bottom:15px;padding-bottom:10px;}
+#container #maincolumn #content .tileItem{border-bottom:1px solid #cccccc;font-size:100%;line-height:18px;margin-bottom:15px;padding-bottom:10px;}
 #container #maincolumn #content .tileItem .tileBody,
 #container #maincolumn #content .tileItem .tileFooter{display:inline;}
 #container #maincolumn #content img.tileImage{float:left;margin:0 10px 10px 0;display:inline;}
 #container #maincolumn #content div.newsImageContainer {float:right;margin:0 0px 10px 10px;display:inline;}
 #container #maincolumn #content div.newsImageContainer a {border-bottom:none;}
-#container #maincolumn #content div.newsImageContainer p.discreet {margin:0;padding:0.5em;background-color:#666;background-color:rgba(40,40,40,0.7);color:White;font-weight:bold;position:relative;width:190px;top:-3em;}
+#container #maincolumn #content div.newsImageContainer p.discreet {margin:0;padding:0.5em;background-color:#666;background-color:rgba(40,40,40,0.7);color:#ffffff;font-weight:bold;position:relative;width:190px;top:-3em;}
 #container #maincolumn #content .eventDetails {float:right;clear:right;margin:0 0 0.5em 1em;}
 #container #maincolumn #content blockquote{border-left:2px dotted #AAAAAA;font-style:italic;margin-left:20px;padding-left:20px;}
 #container #maincolumn #content p,
@@ -96,16 +94,16 @@ li {list-style-type:none;display:inline;line-height:1.6em;}
 #container #maincolumn #content a:target {background-color:#ffb;}
 #container #maincolumn #content span.link-external a {background:transparent url(link_icon.png) 0px 1px no-repeat;padding:1px 0px 1px 16px;}
 #container #maincolumn #content #category {font-size:75%;margin-bottom:1em;color:#666;text-align:right;}
-#container #maincolumn #content #category a.link-category {color:black;padding:0.25em 0.5em;background:#CCCCCC;border-radius:0.5em;}
-#container #maincolumn #content #category a.link-category:hover {background:#205c90;color:White;border-color:#205c90;}
+#container #maincolumn #content #category a.link-category {color:#000000;padding:0.25em 0.5em;background:#cccccc;border-radius:0.5em;}
+#container #maincolumn #content #category a.link-category:hover {background:#205c90;color:#ffffff;border-color:#205c90;}
 #container #maincolumn #content #category .separator {display:none;}
-#container #maincolumn #content ul {list-style-type:disc;margin-left:2em;margin-bottom:1em;}
+#container #maincolumn #content ul {list-style-type:square;margin-left:2em;margin-bottom:1em;}
 #container #maincolumn #content ol{list-style-type:decimal;margin-left:2em;margin-bottom:1em;}
 #container #maincolumn #content li{margin-bottom:0.25em;line-height:1.5em;list-style-type:inherit;}
 #container #maincolumn #content .visualNoMarker {list-style:none;margin-left:0;}
 
 /*breadcrumbs*/
-#portal-breadcrumbs {font-size:10px;margin:0 0 20px 0px;text-transform:uppercase;line-height:1.5em;}
+#portal-breadcrumbs {font-size:70%;margin:0 0 20px 0px;text-transform:uppercase;line-height:1.5em;}
 #portal-breadcrumbs a {border-bottom:none;display:inline-block;}
 #portal-breadcrumbs a:hover{color:#f99734}
 
@@ -118,10 +116,10 @@ li {list-style-type:none;display:inline;line-height:1.6em;}
 #container #maincolumn #content dl.portalMessage {font-size:100%;}
 #container #maincolumn #content dl.portalMessage dt {margin:0 0.5em 0 0;padding:0.5em 0.75em;}
 #container #maincolumn #content dl.portalMessage dd {margin:0;}
-#container #maincolumn #content ul.formTabs {background-color:#ddd;border:0.3em solid #ddd;}
+#container #maincolumn #content ul.formTabs {background-color:#dddddd;border:0.3em solid #dddddd;}
 #container #maincolumn #content #edit-bar {background-color:#75ad0a;border:0.25em solid #75ad0a;font-size:80%;min-height:2em;margin-bottom:1em;padding-top:0.05em;}
 #container #maincolumn #content #content-views {float:left;background-color:#75ad0a;}
-#container #maincolumn #content #content-views a {color:White;}
+#container #maincolumn #content #content-views a {color:#ffffff;}
 #container #maincolumn #edit-bar,
 #container #maincolumn #content ul.formTabs {display:block;border-style:solid solid none solid;margin-left:0;border-top-right-radius:0.5em;border-top-left-radius:0.5em;}
 #container #maincolumn #content li.formTab {display:inline;margin-right:0.25em;}
@@ -134,12 +132,12 @@ li {list-style-type:none;display:inline;line-height:1.6em;}
 #container #maincolumn #content-views li.selected a,
 #container #maincolumn #content-views li a:hover,
 #container #maincolumn #content li.formTab a.selected,
-#container #maincolumn #content li.formTab a:hover {background:White;color:Black;}
+#container #maincolumn #content li.formTab a:hover {background:#ffffff;color:#000000;}
 #container #maincolumn #content-views li.selected a,
 #container #maincolumn #content-views li a:hover,
 #container #maincolumn #content li.formTab a.selected,
 #container #maincolumn #content li.formTab a:hover {border-top-right-radius:0.5em;border-top-left-radius:0.5em;}
-#container #maincolumn #content li.formTab a.notify {background-color:red;color:White;}
+#container #maincolumn #content li.formTab a.notify {background-color:red;color:#ffffff;}
 #container #maincolumn #content li.formTab a.required span {background-image:url(required.png);background-position:center right;background-repeat:no-repeat;padding-right:1em;}
 #container #maincolumn #content fieldset.formPanel {border:none;}
 #container #maincolumn #content fieldset.formPanel.hidden {display:none;}
@@ -156,19 +154,19 @@ textarea:focus {background-color:#ffffe0;}
 #content legend {font-size:100%;font-weight:bold;padding:0.5em 0.5em 0.5em 0;}
 label {font-weight:bold;}
 #content label {}
-#content optgroup {font-style:normal;font-weight:bold;color:#999;padding-left:0.25em;}
-#content option {color:black;}
+#content optgroup {font-style:normal;font-weight:bold;color:#999999;padding-left:0.25em;}
+#content option {color:#000000;}
 #content optgroup > option {padding:0 0.25em 0 1em;}
 dl.enableFormTabbing dd {margin-left:0;padding-top:2em;}
 .searchSection {color:#76797c;margin-top:0.25em;}
-.searchSection label:hover {color:Black;}
+.searchSection label:hover {color:#000000;}
 .field {clear:both;margin-bottom:1em;}
 .field input[type="text"] {/*width:100%;*/}
 .field input[type="text"][name$=".title"],
 input#title {width:100%;}
 .field.error input[type="text"][name$=".title"],
 .error input#title {width:99%;}
-.fieldRequired {background:url(required.png) center left no-repeat;padding:0 0 0 1em;color:White;}
+.fieldRequired {background:url(required.png) center left no-repeat;padding:0 0 0 1em;color:#ffffff;}
 .fieldUploadFile {text-align:right;margin-right:0.75em;display:none;}
 .fieldTextFormat {text-align:right;margin-right:0.75em}
 .formHelp {color:#555;margin:0 0 0.2em 0;}
@@ -181,41 +179,53 @@ textarea#form\.description {height:6em;width:99%;}
 table.listing tbody tr.odd.selected td,
 tr.selected {background-color:#ffa;}
 .reviewHistory,
-.contentHistory {display:inline;color:Black;}
+.contentHistory {display:inline;color:#000000;}
 .spacer {margin:1em;}
 .label {font-weight:bold;display:inline;padding-right:0.5em;}
-.optionsToggle {border:none;color:Black;background:none;font-weight:normal;font-size:90%;}
+.optionsToggle {border:none;color:#000000;background:none;font-weight:normal;font-size:90%;}
 fieldset,
 .editionComment {line-height:1.5em;margin:1em 0;padding:0;width:auto;}
+.icons-on #plone-contentmenu-factories .contenttype-file {background: no-repeat transparent 0px -428px url(contenttypes-sprite.png);}
+.icons-on #plone-contentmenu-factories .contenttype-image {background: no-repeat transparent 0px -860px url(contenttypes-sprite.png);}
+.icons-on .contenttype-document,
+.icons-on .contenttype-event,
+.icons-on .contenttype-folder,
+.icons-on .contenttype-link,
+.icons-on .contenttype-news-item,
+.icons-on .contenttype-plone-site,
+.icons-on .contenttype-topic,
+.icons-on #plone-contentmenu-factories .contenttype-file,
+.icons-on #plone-contentmenu-factories .contenttype-image {line-height: 2em;display: block; padding-left: 20px;}
+.icons-on .contenttype-document {background: no-repeat transparent 0px 4px url(contenttypes-sprite.png);}
+.icons-on .contenttype-event {background: no-repeat transparent 0px -212px url(contenttypes-sprite.png);}
+.icons-on .contenttype-folder {background: no-repeat transparent 0px -644px url(contenttypes-sprite.png);}
+.icons-on .contenttype-link {background: no-repeat transparent 0px -1076px url(contenttypes-sprite.png);}
+.icons-on .contenttype-news-item {background: no-repeat transparent 0px -1292px url(contenttypes-sprite.png);}
+.icons-on .contenttype-plone-site {background: no-repeat transparent 0px -1508px url(contenttypes-sprite.png);}
+.icons-on .contenttype-topic {background: no-repeat transparent 0px -1724px url(contenttypes-sprite.png);}
 
 /*login*/
 #portal-header {position: relative;z-index: 2;}
 #portal-logo {display: inline-block;margin: 1.375em 0;}
-#portal-globalnav {clear: both;font-size: 80%; background: #ddd;margin: 0 0 1em 0;}
-#portal-globalnav li a {display: inline-block;  padding: 0.5em 1em 2em 1em;background: #ddd;min-width: 6em;white-space: normal;border-right: 0.1em solid white;}
+#portal-globalnav {clear: both;font-size: 80%; background: #dddddd;margin: 0 0 1em 0;}
+#portal-globalnav li a {display: inline-block;  padding: 0.5em 1em 2em 1em;background: #dddddd;min-width: 6em;white-space: normal;border-right: 0.1em solid #ffffff;}
 #portal-globalnav .selected a,
-#portal-globalnav a:hover {background: #205c90;color: White;}
-#portal-globalnav .selected a:hover {background: #ddd;color: #205c90;}
+#portal-globalnav a:hover {background: #205c90;color: #ffffff;}
+#portal-globalnav .selected a:hover {background: #dddddd;color: #205c90;}
 #portal-personaltools {float: right;background: #e3e3e3;position: relative;z-index: 3;top: 0;right: 0;padding: 0.25em 0.5em;font-size: 80%;border-bottom-right-radius: 0.5em;border-bottom-left-radius: 0.5em;}
 #portal-personaltools #anon-personalbar a {float: left;margin-right: 0;}
 #portal-languageselector {float: right;background: #e3e3e3;position: relative;top: 0;right: 1px;z-index: 3;padding: 0.25em 0.5em;font-size: 80%;border-bottom-right-radius: 0.5em;border-bottom-left-radius: 0.5em;max-width: 50%;}
 #portal-searchbox {float: right;text-align: left;clear: right;margin: 1.2em 0;font-size: 80%;}
 #portal-searchbox form {white-space: nowrap;}
 #portal-searchbox label {font-weight: normal;}
-#searchGadget {width: 13em;}
-#searchGadget,
-.LSBox input.searchButton {}
-.LSBox .searchSection {}
-#content input.searchField {margin-bottom: 1em;}
-input.searchField {}
 .collapsible .collapser.collapsed {padding-right: 14px;background: url('arrowRight.png') center right no-repeat;}
 .collapsible .collapser.expanded {padding-right: 14px;background: url('arrowDown.png') center right no-repeat;}
 
 /*messages*/
 #container #maincolumn dl.portalMessage {margin:1em 0;font-size:80%;border:1px solid #996;background-color:#ffffe3;clear:both;}
 #container #maincolumn dl.portalMessage a,
-#container #maincolumn #content dl.portalMessage a {color:black;border-bottom:1px solid #888;}
-#container #maincolumn dl.portalMessage dt {background-color:#996;font-weight:bold;float:left;margin:0 0.5em 0 0;padding:0.5em 0.75em;color:White;line-height:1.25em;}
+#container #maincolumn #content dl.portalMessage a {color:#000000;border-bottom:1px solid #888;}
+#container #maincolumn dl.portalMessage dt {background-color:#996;font-weight:bold;float:left;margin:0 0.5em 0 0;padding:0.5em 0.75em;color:#ffffff;line-height:1.25em;}
 #container #maincolumn dl.portalMessage dd {padding:0.5em 0.5em;margin:0;line-height:1.25em;}
 #container #maincolumn dl.warning {border-color:#d80;}
 #container #maincolumn dl.warning dt {background-color:#d80;}
@@ -236,21 +246,21 @@ table.plain th,
 table.listing td,
 table.listing th {padding:0.5em 1em;vertical-align:top;}
 table.plain th,
-table.plain td {border:1px solid #ddd;}
+table.plain td {border:1px solid #dddddd;}
 table.listing td.listingCheckbox,
 table.listing th.listingCheckbox {text-align:center;}
-table.listing {border-left:1px solid #ddd;border-bottom:1px solid #ddd;}
-table.listing .top {border-left:1px solid #ddd;border-top:1px solid #ddd;border-right:1px solid #ddd;}
-table.listing th {text-align:left;color:#666;border:0.1em solid #e7e7e7;border-style:solid solid none;background:#ddd;}
+table.listing {border-left:1px solid #dddddd;border-bottom:1px solid #dddddd;}
+table.listing .top {border-left:1px solid #dddddd;border-top:1px solid #dddddd;border-right:1px solid #dddddd;}
+table.listing th {text-align:left;color:#666;border:0.1em solid #e7e7e7;border-style:solid solid none;background:#dddddd;}
 table.listing tr.odd th {border:0.1em solid #fff;border-style:solid solid none none;}
 table.listing tbody th {font-weight:bold;}
 table.listing tbody tr {text-align:left;}
 table.listing tbody tr.odd {background:#eee;}
 table.listing tbody tr td {background:transparent;}
 table.listing tbody tr.odd td {background:#eee;}
-table.listing td {border-right:1px solid #ddd;}
+table.listing td {border-right:1px solid #dddddd;}
 table.listing a {border:none;display:inline-block;border-bottom:none;}
-table.listing td.draggable {text-shadow:White 1px 1px 1px;background:#ddd;border-bottom:1px solid white;padding:0.4em 0.4em 0 0.5em;}
+table.listing td.draggable {text-shadow:#ffffff 1px 1px 1px;background:#dddddd;border-bottom:1px solid #ffffff;padding:0.4em 0.4em 0 0.5em;}
 /* Vertical table data listings */
 table.vertical {font-size:0.85em;}
 table.vertical th {text-align:right;}
@@ -258,16 +268,16 @@ table.vertical td {border-top:0.1em solid #e7e7e7;padding:0.5em;}
 /* Grid table listings */
 table.grid td,
 table.grid th {border:1px solid #e7e7e7;padding:0.5em;}
-.dragindicator {outline:2px solid #FFD700;}
+.dragindicator {outline:2px solid #ffd700;}
 #foldercontents-order-column {padding:0;}
 div.listingBar {font-size:80%;margin:1em 0;}
 div.listingBar .next {display:inline-block;float:right;}
 div.listingBar .previous {display:inline-block;}
-div.listingBar a {display:inline-block;padding:0.25em 0.5em;border:0.1em solid #ccc;}
-div.listingBar a:hover {color:White;background-color:#329fd7;border-color:#329fd7;}
+div.listingBar a {display:inline-block;padding:0.25em 0.5em;border:0.1em solid #cccccc;}
+div.listingBar a:hover {color:#ffffff;background-color:#329fd7;border-color:#329fd7;}
 
 /*PORTLETS*/
-dl.portlet {border-bottom:1px solid #CCCCCC;font-size:12px;line-height:18px;margin-bottom:15px;padding-bottom:10px;}
+dl.portlet {border-bottom:1px solid #cccccc;font-size:75%;line-height:18px;margin-bottom:15px;padding-bottom:10px;}
 dl.portletError {background-color:#FFA500;}
 dl.portlet dt,
 div.portletAssignments div.portletHeader {padding:0;background:none;line-height:normal;text-transform:uppercase;margin-bottom:10px;}
@@ -275,21 +285,22 @@ dl.portlet dt.hiddenStructure {padding:0;}
 div.portletAssignments {font-size:0.8em;line-height:auto;}
 div.portletAssignments .managedPortletActions {float:right;}
 div.portletAssignments .managedPortletActions a {margin:0 0.25em;border:none;}
+div.portletAssignments select{width:200px;}
 dl.portlet dt a:link,
 dl.portlet dt a:visited,
-dl.portlet dt a:hover {color:black;display:block;border:none;}
+dl.portlet dt a:hover {color:#000000;display:block;border:none;}
 dl.portlet a:link {color:#0c5390;}
 dl.portlet a:visited {color:#427597;}
 dl.portlet a:hover {color:#f99734;}
 dl.portlet ol {list-style-type:decimal;margin-left:2em;}
 dl.portlet li {margin-bottom:0.25em;line-height:1.5em;display:list-item;list-style-type:inherit;}
-dl.portlet dd.portletItem{font-size:12px;line-height:18px;margin-bottom:15px;}
+dl.portlet dd.portletItem{font-size:100%;line-height:18px;margin-bottom:15px;}
 dl.portlet dd.portletItem .tile{font-weight:bold;}
 dl.portlet dd.portletItem,
 dl.portlet dd.portletFooter,
 dl.portletError dd {padding:0px;}
 div.managePortletsLink,
-a.managePortletsFallback {text-align:center;padding:0.25em 0.5em;font-size:80%;margin:0 auto 1em;background:#CCCCCC;border-radius:0.5em;}
+a.managePortletsFallback {text-align:center;padding:0.25em 0.5em;font-size:80%;margin:0 auto 1em;background:#cccccc;border-radius:0.5em;}
 a.managePortletsFallback {display:inline-block;}
 #content a.managePortletsFallback {display:block;border-bottom:none;}
 #portlet-prefs a {border:none;line-height:2em;}
@@ -299,43 +310,40 @@ a.managePortletsFallback {display:inline-block;}
 #dashboard-portlets3,
 #dashboard-portlets4 {display:inline-block;}
 .managedPortlet {margin:0.8em 0;}
-.blockedPortlet .portletHeader {background:none repeat scroll 0 0 transparent !important;border:1px dashed #CCCCCC;margin:-1px;}
+.blockedPortlet .portletHeader {background:none repeat scroll 0 0 transparent !important;border:1px dashed #cccccc;margin:-1px;}
 .blockedPortlet .portletHeader a {color:#666666;}
-.blockedPortlet .portletBlockedMessage {color:white;display:inline;}
+.blockedPortlet .portletBlockedMessage {color:#ffffff;display:inline;}
 .portletItemDetails {display:block;font-size:90%;line-height:1.5em;}
 
 
 /*search*/
-.LSBox input.searchField {background-color:white;border:1px solid #264C6C;border-radius:3px 3px 3px 3px;height:19px;padding:4px 5px;position:relative;top:1px;}
-.LSBox input[type=submit] {background-color:#3A678D;background:linear-gradient(center top , #1389D3, #3A678D) repeat scroll 0 0 transparent;border:1px solid #166FA9;border-radius:4px 4px 4px 4px;box-shadow:0 1px 1px #84C7F4 inset;color:#FFFFFF;cursor:pointer;font-size:12px;font-weight:bold;padding:5px 10px;text-shadow:1px 1px 1px #166FA9;}
-.LSBox input[type=submit]:hover {background-color:#F99734;background:linear-gradient(center top , #F2B06F, #F99734) repeat scroll 0 0 transparent;border:1px solid #F99734;box-shadow:0 1px 1px #F99734 inset;text-shadow:1px 1px 1px #000000;}
-#portal-searchbox {float:right;text-align:left;clear:right;margin:1.2em 0;font-size:80%;}
+.LSBox input.searchField {background-color:#ffffff;border:1px solid #264C6C;border-radius:3px 3px 3px 3px;height:19px;padding:4px 5px;position:relative;top:1px;}
+.LSBox input[type=submit] {background-color:<dtml-var global_color>;border:1px solid #166FA9;border-radius:4px 4px 4px 4px;box-shadow:0 1px 1px #84C7F4 inset;color:#FFFFFF;cursor:pointer;font-size:100%;font-weight:bold;padding:5px 10px;text-shadow:1px 1px 1px #166FA9;}
+.LSBox input[type=submit]:hover {background-color:#E98A2A;border:1px solid #F99734;box-shadow:0 1px 1px #F99734 inset;text-shadow:1px 1px 1px #000000;}
+#portal-searchbox {float:right;text-align:left;clear:right;margin:1.2em 0;font-size:80%;position:relative;}
 #portal-searchbox form {white-space:nowrap;}
 #portal-searchbox label {font-weight:normal;}
-#searchGadget {width:13em;}
-#searchGadget,
-.LSBox input.searchButton {}
-.LSBox .searchSection {}
+#searchGadget {width:13em;font-size:100%;}
 #content input.searchField {margin-bottom:1em;}
 
 /*navigation*/
 dl.portlet ul.navTree{margin-bottom:15px;}
-dl.portlet ul.navTree li a {border:none;display:block;zoom:1;}
+dl.portlet ul.navTree li a {border:none;display:block;}
 dl.portlet ul.navTree li a:hover {color:#F99734;text-decoration:none;}
 dl.portletNavigationTree{border:none;}
 dl.portletNavigationTree dd.portletItem {padding:0;}
-dl.portlet ul.navTreeLevel0{border-top:1px solid #CCCCCC}
-dl.portlet ul.navTreeLevel0 > .navTreeItem {padding:10px 0px;border-bottom:1px solid #CCCCCC;font-weight:bold;}
-dl.portlet ul.navTreeLevel1{border-left:1px solid #CCCCCC;border-top:none;margin:10px 0 5px 10px;padding-left:10px;}
+dl.portlet ul.navTreeLevel0{border-top:1px solid #cccccc}
+dl.portlet ul.navTreeLevel0 > .navTreeItem {padding:10px 0px;border-bottom:1px solid #cccccc;font-weight:bold;}
+dl.portlet ul.navTreeLevel1{border-left:1px solid #cccccc;border-top:none;margin:10px 0 5px 10px;padding-left:10px;}
 dl.portlet ul.navTreeLevel1 .navTreeItem {padding:0px;line-height:2em;font-weight:normal;}
 dl.portlet ul.navTree .navTreeCurrentItem {color:#000000;margin:0px;background-color:transparent;border:0px;}
 
-/*calendar*/
+/*estatic*/
 /*rss*/
 /*recent*/
 /*calendar*/
 .portletCalendar {margin:1px 0 1em;width:100%;}
-.portletCalendar dt {background-color:#CCCCCC;border-bottom:medium none;font-weight:bold;line-height:1.6em;text-align:center;}
+.portletCalendar dt {background-color:#cccccc;border-bottom:medium none;font-weight:bold;line-height:1.6em;text-align:center;}
 .portletCalendar dd {margin:0;padding:0;}
 .portletCalendar dt a#calendar-previous {float:left;margin:0 -0.5em;padding:0 1em;}
 .portletCalendar dt a#calendar-next {float:right;margin:0 -0.5em;padding:0 1em;}
@@ -346,29 +354,26 @@ dl.portlet ul.navTree .navTreeCurrentItem {color:#000000;margin:0px;background-c
 .ploneCalendar {border-spacing:0;width:100%;}
 .ploneCalendar a {border-bottom:medium none !important;text-decoration:none;}
 .ploneCalendar td {background-color:transparent;padding:2px;text-align:center;width:14%;}
-.ploneCalendar .weekdays th {background-color:#CCCCCC;font-weight:normal;padding:2px;text-align:center;}
-.ploneCalendar .event {background-color:#CCCCCC;font-weight:bold;}
-.ploneCalendar .todayevent {background-color:#CCCCCC;border:2px solid #3A678D;font-weight:bold;}
-.ploneCalendar .todaynoevent {border:2px solid #3A678D;}
-
-/*estatic*/
+.ploneCalendar .weekdays th {background-color:#cccccc;font-weight:normal;padding:2px;text-align:center;}
+.ploneCalendar .event {background-color:#cccccc;font-weight:bold;}
+.ploneCalendar .todayevent {background-color:#cccccc;border:2px solid <dtml-var global_color>;font-weight:bold;}
+.ploneCalendar .todaynoevent {border:2px solid <dtml-var global_color>;}
 
 /*sitemap*/
 #portal-sitemap {list-style:none;margin-left:0;font-size:130%;font-weight:bold;}
 #portal-sitemap li {list-style:none;margin-left:0;}
 #portal-sitemap a {border-bottom:none;display:block;}
-#portal-sitemap > li {border-bottom:1px solid #CCCCCC;line-height:1.8em;padding:0.25em 1em;margin-bottom:0;}
+#portal-sitemap > li {border-bottom:1px solid #cccccc;line-height:1.8em;padding:0.25em 1em;margin-bottom:0;}
 #portal-sitemap .navTreeLevel2,
 #portal-sitemap .navTreeLevel2 ul {font-size:85%;font-weight:normal;margin-bottom:0;padding:0.25em 0;}
 
-
 /*FOOTER*/
-#footer{width:960px;margin:0 auto;text-align:left;}
+#footer{width:960px;margin:0 auto;text-align:left;color:#444444;}
 #footer #portal-footer {font-size:75%;background:none;border-top:1px solid #F99734;padding:25px 0 10px;}
 #footer #portal-footer .left{}
 #footer #portal-footer .right{display:inline;float:right;margin:0 0 10px 10px;width:30%;}
-#footer #portal-colophon {font-size:70%;text-align:center;margin-bottom:1em;color:#777777;padding-top:1em;border-top:1px solid #F99734;}
+#footer #portal-colophon {font-size:70%;text-align:center;margin-bottom:1em;padding-top:1em;border-top:1px solid #F99734;}
 #footer #portal-colophon li {padding:0 0.75em;}
-#footer #portal-colophon a {color:#444;}
+#footer #portal-colophon a {color:#444444;}
 
 /* </dtml-with> */

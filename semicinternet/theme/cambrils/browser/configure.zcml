@@ -60,6 +60,14 @@
       />
 
   <browser:viewlet
+      name=".theme.cambrils.colophon"
+      manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+      template="templates/colophon.pt"
+      layer=".interfaces.IThemeSpecific"
+      permission="zope2.View"
+      />
+
+  <browser:viewlet
       name="plone.searchbox"
       manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
       template="templates/searchbox.pt"

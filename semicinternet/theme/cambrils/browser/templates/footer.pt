@@ -1,18 +1,21 @@
 <div id="portal-footer" metal:define-macro="portal_footer" i18n:domain="plone" tal:define="hp_view context/@@hp_view">
   <div class="right">
     <p tal:content="structure python:hp_view.getCompanyName()"></p>
-    <p tal:content="structure python:hp_view.getCompanyAboutLine1()"></p>
-    <p tal:content="structure python:hp_view.getCompanyAboutLine2()"></p>
-    <p tal:content="structure python:hp_view.getCompanyAboutLine3()"></p>
-    <p tal:content="structure python:hp_view.getCompanyAboutLine4()"></p>
+    <p tal:condition="python:hp_view.getCompanyAboutLine1()" 
+       tal:content="structure python:hp_view.getCompanyAboutLine1()"></p>
+    <p tal:condition="python:hp_view.getCompanyAboutLine2()" 
+       tal:content="structure python:hp_view.getCompanyAboutLine2()"></p>
+    <p tal:condition="python:hp_view.getCompanyAboutLine3()" 
+       tal:content="structure python:hp_view.getCompanyAboutLine3()"></p>
+    <p tal:condition="python:hp_view.getCompanyAboutLine4()" 
+       tal:content="structure python:hp_view.getCompanyAboutLine4()"></p>
   </div>
   <div class="left">
     <p>
         <acronym title="Copyright">&copy;</acronym>
         <span tal:define="now modules/DateTime/DateTime" tal:content="now/year"></span>
         <a tal:attributes="href python:hp_view.getAuthorUrl()"
-           tal:content="python:hp_view.getAuthorName()"
-           target="_blank">SEMIC Internet</a>
+           tal:content="python:hp_view.getAuthorName()">SEMIC Internet</a>
     </p>
   </div>
 </div>
