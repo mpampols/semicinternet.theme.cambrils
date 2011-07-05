@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.0'
+version = '1.0.07052011'
 
 setup(name='semicinternet.theme.cambrils',
       version=version,
@@ -17,7 +17,7 @@ setup(name='semicinternet.theme.cambrils',
       keywords='semic internet plone theme',
       author='Marc Pampols',
       author_email='mpampols@semicinternet.com',
-      url='',
+      url='https://github.com/mpampols/semicinternet.theme.cambrils',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['semicinternet', 'semicinternet.theme',],
