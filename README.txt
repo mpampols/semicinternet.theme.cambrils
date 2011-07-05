@@ -28,18 +28,18 @@ DTML Variables
 You can change this set of dtml variables customizing the base_properties.props file at:
 portal_skins/cambrils_styles/base_properties
 
-Variable 				Default
---------				-------
-logoName				logo.png
-linkColor 				#0c5390
-linkColorHover 			#f99734
-fontColor 				#333333
+Variable 		Default
+--------		-------
+logoName		logo.png
+linkColor 		#0c5390
+linkColorHover 		#f99734
+fontColor 		#333333
 fontColorAlternative 	#444444
-headingFontFamily 		Georgia, Helvetica, Arial, Verdana, sans-serif
-fontFamily 				Arial, Verdana, sans-serif
-backgroundColor 		#ffffff
-backgroundZones 		#cccccc
-backgroundTables 		#dddddd
+headingFontFamily 	Georgia, Helvetica, Arial, Verdana, sans-serif
+fontFamily 		Arial, Verdana, sans-serif
+backgroundColor 	#ffffff
+backgroundZones 	#cccccc
+backgroundTables 	#dddddd
 
 Authors
 -------
