@@ -14,11 +14,6 @@ from semicinternet.theme.cambrils.browser.interfaces import ICambrilsSettings
 
 from plone.registry.fieldfactory import persistentFieldAdapter
 
-from semicinternet.theme.cambrils.browser.interfaces import ICambrilsSettings
-
-#registry = getUtility(IRegistry)
-#settings = registry.forInterface(ICambrilsSettings)
-
 DEFAULT_NUMBER_OF_ITEMS = 10
 
 class Homepage(BrowserView):
@@ -56,11 +51,6 @@ class Homepage(BrowserView):
         else:
             return False
 
-    def getFooterCopyright(self):
-        registry = getUtility(IRegistry)
-        settings = registry.forInterface(ICambrilsSettings)
-        return settings.company_name
-        
     def getSlideshowFolder(self):
         registry = getUtility(IRegistry)
         settings = registry.forInterface(ICambrilsSettings)
@@ -100,3 +90,34 @@ class Homepage(BrowserView):
         registry = getUtility(IRegistry)
         settings = registry.forInterface(ICambrilsSettings)
         return settings.author_url
+
+    def showSocialIcons(self):
+        registry = getUtility(IRegistry)
+        settings = registry.forInterface(ICambrilsSettings)
+        if (settings.facebook_fanpage or
+            settings.flickr_page or
+            settings.twitter_stream or
+            settings.youtube_channel):
+            return True
+        else:
+            return False
+
+    def getFacebookFanpage(self):
+        registry = getUtility(IRegistry)
+        settings = registry.forInterface(ICambrilsSettings)
+        return settings.facebook_fanpage
+
+    def getFlickrPage(self):
+        registry = getUtility(IRegistry)
+        settings = registry.forInterface(ICambrilsSettings)
+        return settings.flickr_page
+
+    def getTwitterStream(self):
+        registry = getUtility(IRegistry)
+        settings = registry.forInterface(ICambrilsSettings)
+        return settings.twitter_stream
+
+    def getYoutubeChannel(self):
+        registry = getUtility(IRegistry)
+        settings = registry.forInterface(ICambrilsSettings)
+        return settings.youtube_channel

@@ -16,3 +16,6 @@ from plone.app.layout.viewlets import common
 
 class GlobalSectionsViewlet(common.GlobalSectionsViewlet):
     render = ViewPageTemplateFile('templates/global_sections.pt')
+
+class SocialPagesViewlet(common.ViewletBase):
+    render = ViewPageTemplateFile('templates/social_pages.pt')

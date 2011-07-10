@@ -3,7 +3,6 @@ from plone.app.registry.browser import controlpanel
 from semicinternet.theme.cambrils.browser.interfaces import ICambrilsSettings, _
 
 class CambrilsSettingsEditForm(controlpanel.RegistryEditForm):
-
     schema = ICambrilsSettings
     label = _(u"Cambrils settings")
     description = _(u"""""")
@@ -16,4 +15,3 @@ class CambrilsSettingsEditForm(controlpanel.RegistryEditForm):
 
 class CambrilsSettingsControlPanel(controlpanel.ControlPanelFormWrapper):
     form = CambrilsSettingsEditForm
-

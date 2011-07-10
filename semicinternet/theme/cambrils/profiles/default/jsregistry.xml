@@ -4,7 +4,7 @@
 
 <object name="portal_javascripts">
 
- <!-- Javascript files that will be registered with the
+<!-- Javascript files that will be registered with the
       portal_javascripts tool are defined here. You can also specify values
       for existing resources if you need to modify some of their properties.
       Javascript elements accept these parameters:
@@ -21,5 +21,13 @@
   <javascript id="jquery.tools.min.scroll.nav.js"
 	      cacheable="False" compression="safe" cookable="False"
 	      enabled="True" expression=""  inline="False"/>
+
+  <javascript id="jquery.mousewheel-3.0.4.pack.js"
+        cacheable="False" compression="safe" cookable="False"
+        enabled="True" expression=""  inline="False"/>
+
+  <javascript id="jquery.fancybox-1.3.4.pack.js"
+        cacheable="False" compression="safe" cookable="False"
+        enabled="True" expression=""  inline="False"/>
 
 </object>

@@ -1,6 +1,5 @@
 <metal:page define-macro="master">
-  <tal:doctype tal:replace="structure string:&lt;!DOCTYPE html PUBLIC
-  &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;
+  <tal:doctype tal:replace="structure string:&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;
   &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;" />
   <html xmlns="http://www.w3.org/1999/xhtml" 
     tal:define="portal_state context/@@plone_portal_state;
@@ -18,7 +17,6 @@
   <metal:cache use-macro="context/global_cache_settings/macros/cacheheaders">Get the global cache headers located in global_cache_settings.</metal:cache>
   <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  
   <!-- Forces IE8+ into newest rendering engine even if on an intranet. This has to be defined before any script/style tags. -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <metal:baseslot define-slot="base">
@@ -35,10 +33,16 @@
   <metal:headslot define-slot="head_slot" />
   <metal:styleslot define-slot="style_slot" />
   <metal:javascriptslot define-slot="javascript_head_slot" />
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("a.portletGalleryImage").fancybox({'type':'image'});
+    });
+  </script>
   <meta name="viewport" content="width=device-width; initial-scale=0.6666; maximum-scale=1.0; minimum-scale=0.6666" />
   <meta name="generator" content="Plone - http://plone.org" />
   </tal:notajax>
-  </head><body tal:define="isRTL portal_state/is_rtl;
+  </head>
+  <body tal:define="isRTL portal_state/is_rtl;
                   sl python:plone_view.have_portlets('plone.leftcolumn', view);
                   sr python:plone_view.have_portlets('plone.rightcolumn', view);
                   body_class python:plone_view.bodyClass(template, view);"
@@ -77,8 +81,7 @@
                   <div tal:replace="structure provider:plone.abovecontenttitle" tal:condition="not:ajax_load" />
                   <metal:title define-slot="content-title">
                     <metal:comment tal:content="nothing"> If you write a custom title always use
-                      <h1 class="documentFirstHeading"></h1>
-                      for it </metal:comment>
+                      <h1 class="documentFirstHeading"></h1> for it </metal:comment>
                     <h1 metal:use-macro="context/kss_generic_macros/macros/generic_title_view"> Generic KSS Title. Is rendered with class="documentFirstHeading". </h1>
                   </metal:title>
                   <div tal:replace="structure provider:plone.belowcontenttitle" tal:condition="not:ajax_load" />

@@ -52,6 +52,14 @@
       />
 
   <browser:viewlet
+      name=".theme.cambrils.social_pages"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class=".viewlets.SocialPagesViewlet"
+      layer=".interfaces.IThemeSpecific"
+      permission="zope2.View"
+      />
+
+  <browser:viewlet
       name=".theme.cambrils.footer"
       manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
       template="templates/footer.pt"

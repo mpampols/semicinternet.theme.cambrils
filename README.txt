@@ -4,17 +4,19 @@ Project Description
 Introduction
 ------------
 Cambrils is a simple, clean and robust Plone 4 Theme based on Sunburst Theme, it has been build to validate both, CSS 3 and XHTML 1.0 Strict code, and to provide a quick way to create new websites without deep technical knowledge.
-
+        
 Main features
 -------------
 - XHTML 1.0 Strict validated.
 - 960px with variable column grid, you can build 1, 2 or 3 column sections with side portlets.
 - Tested in the most popular browsers.
+- Customizable image gallery portlet with fancybox (fancybox.net)
+- Customizable social pages viewlet.
 - Change only one color code variable in base_properties.props, and it will automatically change that color everywhere in the theme (menu elements, list elements, links, calendar, lists...)
 - Automatic header slideshow with customizable images folder via Plone Control Panel.
 - Highly customizable, tested in a wide range of different viewlets and portlets combinations and positions.
 - Customizable copyright and website information via Plone Control Panel.
-
+        
 Tested in browsers
 ------------------
 - Firefox 4.0+
@@ -22,26 +24,56 @@ Tested in browsers
 - Chrome 12+
 - Safari 5
 - IE 8+
+        
+Image Gallery Portlet
+---------------------
+There's a new portlet available that builds an image gallery with the lightbox effect using fancybox.
+With this portlet you can customize the root folder where the images are located, a depth value and a listing limit.
+
+Social Pages Viewlet
+--------------------
+Enter the Facebook, Twitter, Youtube and Flickr pages into the Plone Control Panel theme settings.
+Social icons will appear at the top, as a Plone viewlet.
 
 DTML Variables
 --------------
 You can change this set of dtml variables customizing the base_properties.props file at:
 portal_skins/cambrils_styles/base_properties
-
-Variable 		Default
---------		-------
-logoName		logo.png
-linkColor 		#0c5390
-linkColorHover 		#f99734
-fontColor 		#333333
-fontColorAlternative 	#444444
-headingFontFamily 	Georgia, Helvetica, Arial, Verdana, sans-serif
-fontFamily 		Arial, Verdana, sans-serif
-backgroundColor 	#ffffff
-backgroundZones 	#cccccc
-backgroundTables 	#dddddd
-
+        
+- logoName: logo.png
+- linkColor: #0c5390
+- linkColorHover: #f99734
+- fontColor: #333333
+- fontColorAlternative: #444444
+- headingFontFamily: Georgia, Helvetica, Arial, Verdana, sans-serif
+- fontFamily: Arial, Verdana, sans-serif
+- backgroundColor: #ffffff
+- backgroundZones: #cccccc
+- backgroundTables: #dddddd
+        
 Authors
 -------
-Marc Pampols <mpampols(at)semicinternet.com>
-Marc Vicente <mvicente(at)semicinternet.com>
+- Marc Pampols <mpampols@semicinternet.com>
+- Marc Vicente <mvicente@semicinternet.com>
+        
+Changelog
+---------
+
+1.0.20110710
+------------
+- added new image gallery portlet
+- added new social pages viewlet
+- added fancybox for the gallery portlet
+- cleanup
+
+1.0.07052011
+------------
+- Code cleaning
+        
+1.0
+---
+- Initial pulic release
+        
+0.9
+---
+- Initial internal release

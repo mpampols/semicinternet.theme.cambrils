@@ -24,7 +24,7 @@ li {list-style-type:none;display:inline;line-height:1.6em;}
 .clear{clear:both;font-size:1px;height:1px;margin:0;line-height:1px;}
 #web {width:960px;margin:0 auto;text-align:left;}
 
-/*HEADER*/
+/* header */
 #header{width:960px;margin:0 auto 20px auto;text-align:left;}
 #header #portal-header #portal-logo{float:left;display:inline;text-align:left;margin:10px 0px !important;}
 #header #portal-header #portal-languageselector {background-color:<dtml-var backgroundColor>;margin:6px 0 0;padding:0;float:none;font-size:80%;}
@@ -51,7 +51,7 @@ li {list-style-type:none;display:inline;line-height:1.6em;}
 #header #portal-siteactions li {margin-right:0.5em;}
 #header #portal-siteactions li a:hover {color:#75ad0a}
 
-/*CONTAINER*/
+/* container */
 #container {width:960px;margin:0px auto;text-align:left;}
 #container #leftcolumn{float:left;display:inline;width:200px;margin-right:30px}
 #container #rightcolumn{float:right;display:inline;width:200px;}
@@ -261,11 +261,13 @@ table.listing tbody tr.odd td {background:#eee;}
 table.listing td {border-right:1px solid <dtml-var backgroundTables>;}
 table.listing a {border:none;display:inline-block;border-bottom:none;}
 table.listing td.draggable {text-shadow:<dtml-var backgroundColor> 1px 1px 1px;background:<dtml-var backgroundTables>;border-bottom:1px solid <dtml-var backgroundColor>;padding:0.4em 0.4em 0 0.5em;}
-/* Vertical table data listings */
+
+/* vertical table data listings */
 table.vertical {font-size:0.85em;}
 table.vertical th {text-align:right;}
 table.vertical td {border-top:0.1em solid #e7e7e7;padding:0.5em;}
-/* Grid table listings */
+
+/* grid table listings */
 table.grid td,
 table.grid th {border:1px solid #e7e7e7;padding:0.5em;}
 .dragindicator {outline:2px solid #ffd700;}
@@ -276,7 +278,7 @@ div.listingBar .previous {display:inline-block;}
 div.listingBar a {display:inline-block;padding:0.25em 0.5em;border:0.1em solid <dtml-var backgroundZones>;}
 div.listingBar a:hover {color:<dtml-var backgroundColor>;background-color:#329fd7;border-color:#329fd7;}
 
-/*PORTLETS*/
+/* portlets */
 dl.portlet {border-bottom:1px solid <dtml-var backgroundZones>;font-size:75%;line-height:18px;margin-bottom:15px;padding-bottom:10px;}
 dl.portletError {background-color:#FFA500;}
 dl.portlet dt,
@@ -315,7 +317,6 @@ a.managePortletsFallback {display:inline-block;}
 .blockedPortlet .portletBlockedMessage {color:<dtml-var backgroundColor>;display:inline;}
 .portletItemDetails {display:block;font-size:90%;line-height:1.5em;}
 
-
 /*search*/
 .LSBox input.searchField {background-color:<dtml-var backgroundColor>;border:1px solid #264C6C;border-radius:3px 3px 3px 3px;height:19px;padding:4px 5px;position:relative;top:1px;}
 .LSBox input[type=submit] {background-color:<dtml-var global_color>;border:1px solid #166FA9;border-radius:4px 4px 4px 4px;box-shadow:0 1px 1px #84C7F4 inset;color:<dtml-var backgroundColor>;cursor:pointer;font-size:100%;font-weight:bold;padding:5px 10px;text-shadow:1px 1px 1px #166FA9;}
@@ -338,9 +339,6 @@ dl.portlet ul.navTreeLevel1{border-left:1px solid <dtml-var backgroundZones>;bor
 dl.portlet ul.navTreeLevel1 .navTreeItem {padding:0px;line-height:2em;font-weight:normal;}
 dl.portlet ul.navTree .navTreeCurrentItem {color:#000000;margin:0px;background-color:transparent;border:0px;}
 
-/*estatic*/
-/*rss*/
-/*recent*/
 /*calendar*/
 .portletCalendar {margin:1px 0 1em;width:100%;}
 .portletCalendar dt {background-color:<dtml-var backgroundZones>;border-bottom:medium none;font-weight:bold;line-height:1.6em;text-align:center;}
@@ -367,7 +365,14 @@ dl.portlet ul.navTree .navTreeCurrentItem {color:#000000;margin:0px;background-c
 #portal-sitemap .navTreeLevel2,
 #portal-sitemap .navTreeLevel2 ul {font-size:85%;font-weight:normal;margin-bottom:0;padding:0.25em 0;}
 
-/*FOOTER*/
+/* portlet gallery */
+.portletGallery a img {margin-top: -1px;}
+.portletGallery a img:hover {-webkit-transform: scale(1.35);-webkit-transition-timing-function: ease-out;-webkit-transition-duration: 150ms;-moz-transform: scale(1.35);-moz-transition-timing-function: ease-out;-moz-transition-duration: 150ms;-moz-box-shadow: 0px 0px 10px #FFF;-webkit-box-shadow: 0px 0px 10px #FFF;}
+
+/* social pages */
+#social-pages {clear: right;float: right;}
+
+/* footer */
 #footer{width:960px;margin:0 auto;text-align:left;color:<dtml-var fontColorAlternative>;}
 #footer #portal-footer {font-size:75%;background:none;border-top:1px solid <dtml-var linkColorHover>;padding:25px 0 10px;}
 #footer #portal-footer .left{}

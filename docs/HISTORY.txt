@@ -1,6 +1,13 @@
 Changelog
 =========
 
+1.0.20110710
+------------
+- added new image gallery portlet
+- added new social pages viewlet
+- added fancybox for the gallery portlet
+- cleanup
+
 1.0.07052011
 -------------------
 - cleanup

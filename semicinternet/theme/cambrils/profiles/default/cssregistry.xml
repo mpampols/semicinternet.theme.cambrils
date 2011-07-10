@@ -3,7 +3,7 @@
 
 <object name="portal_css">
 
- <!-- Stylesheets that will be registered with the portal_css tool are defined
+<!-- Stylesheets that will be registered with the portal_css tool are defined
       here. You can also specify values for existing resources if you need to
       modify some of their properties.
       Stylesheet elements accept these parameters:
@@ -43,5 +43,9 @@
  <stylesheet title="" id="slideshow.css" rel="stylesheet" 
              rendering="link" cacheable="True" compression="safe" 
              cookable="True" insert-after="cambrils-public.css" enabled="1" expression=""/>
+
+ <stylesheet title="" id="jquery.fancybox-1.3.4.css" rel="stylesheet" 
+             rendering="link" cacheable="True" compression="safe" 
+             cookable="True" insert-after="slideshow.css" enabled="1" expression=""/>
 
 </object>
