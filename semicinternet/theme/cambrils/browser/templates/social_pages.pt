@@ -1,0 +1,28 @@
+<div id="social-pages" metal:define-macro="social_pages" i18n:domain="plone" tal:define="hp_view context/@@hp_view">
+  <ul tal:condition="python:hp_view.showSocialIcons()">
+    <li tal:define="facebook_fanpage python:hp_view.getFacebookFanpage()"
+        tal:condition="facebook_fanpage">
+      <a href="#" tal:attributes="href facebook_fanpage">
+        <img src="facebook.png" width="32" height="32" alt="Facebook Fanpage" title="Facebook Fanpage" />
+      </a>
+    </li>
+    <li tal:define="flickr_page python:hp_view.getFlickrPage()"
+        tal:condition="flickr_page">
+      <a href="#" tal:attributes="href flickr_page">
+        <img src="flickr.png" width="32" height="32" alt="Flickr Page" title="Flickr Page" />
+      </a>
+    </li>
+    <li tal:define="twitter_stream python:hp_view.getTwitterStream()"
+        tal:condition="twitter_stream">
+      <a href="#" tal:attributes="href twitter_stream">
+        <img src="twitter.png" width="32" height="32" alt="Twitter Stream" title="Twitter Stream" />
+      </a>
+    </li>
+    <li tal:define="youtube_channel python:hp_view.getYoutubeChannel()"
+        tal:condition="youtube_channel">
+      <a href="#" tal:attributes="href youtube_channel">
+        <img src="youtube.png" width="32" height="32" alt="YouTube Channel" title="YouTue Channel" />
+      </a>
+    </li>
+  </ul>
+</div>

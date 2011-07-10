@@ -1,0 +1,22 @@
+<dl class="portlet portletGallery"
+    i18n:domain="plone">
+  <dt class="portletHeader">
+    <span i18n:translate="title_image_gallery">Image gallery</span>
+  </dt>
+  <dd>
+    <tal:items tal:define="plone_view context/@@plone;
+                           getIcon nocall:plone_view/getIcon;
+                           normalizeString nocall:plone_view/normalizeString;
+                           toLocalizedTime nocall:plone_view/toLocalizedTime;"
+               tal:repeat="obj view/gallery_items">
+      <a href="#"
+         type="image/jpeg"
+         tal:attributes="href string:${obj/getURL};"
+         class="portletGalleryImage">
+        <img width="64"
+             tal:attributes="src string:${obj/getURL}/image_thumb;
+                             alt string:${obj/Title};" />
+      </a>
+    </tal:items>
+  </dd>
+</dl>
