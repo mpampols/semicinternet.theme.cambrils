@@ -1,5 +1,5 @@
 <dl class="portlet portletGallery"
-    i18n:domain="plone">
+    i18n:domain="semicinternet.theme.cambrils">
   <dt class="portletHeader">
     <span i18n:translate="title_image_gallery">Image gallery</span>
   </dt>

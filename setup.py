@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.0.07052011'
+version = '1.0.20110712'
 
 setup(name='semicinternet.theme.cambrils',
       version=version,

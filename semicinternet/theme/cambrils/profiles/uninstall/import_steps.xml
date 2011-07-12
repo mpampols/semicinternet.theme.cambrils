@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <import-steps>
   <import-step id="semicinternet.theme.cambrils.uninstall"
-               version="1.0dev"
+               version="1.0.20110712"
                handler="semicinternet.theme.cambrils.setuphandlers.uninstallVarious"
                title="Cambrils Theme: miscellaneous uninstall steps">
     <dependency step="skins" />

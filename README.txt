@@ -54,26 +54,4 @@ portal_skins/cambrils_styles/base_properties
 Authors
 -------
 - Marc Pampols <mpampols@semicinternet.com>
-- Marc Vicente <mvicente@semicinternet.com>
-        
-Changelog
----------
-
-1.0.20110710
-------------
-- added new image gallery portlet
-- added new social pages viewlet
-- added fancybox for the gallery portlet
-- cleanup
-
-1.0.07052011
-------------
-- Code cleaning
-        
-1.0
----
-- Initial pulic release
-        
-0.9
----
-- Initial internal release
+- Marc Vicente <mvicente@semicinternet.com

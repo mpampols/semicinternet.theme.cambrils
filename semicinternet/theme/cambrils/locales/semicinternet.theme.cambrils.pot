@@ -1,0 +1,206 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# Translation for semicinternet.theme.cambrils
+# Marc Pampols <mpampols@semicinternet.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: semicinternet.theme.cambrils\n"
+"POT-Creation-Date: 2011-07-12 15:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: Marc Pampols <mpampols@semicinternet.com>\n"
+"Language-Team: English <mpampols@semicinternet.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: semicinternet.theme.cambrils\n"
+
+#: ./browser/controlpanel.py:8
+msgid ""
+msgstr ""
+
+#: ./browser/gallery.py:31
+msgid "Add Gallery Portlet"
+msgstr ""
+
+#: ./profiles/default/controlpanel.xml
+msgid "Cambrils Theme"
+msgstr ""
+
+#: ./browser/controlpanel.py:7
+msgid "Cambrils settings"
+msgstr ""
+
+#: ./browser/interfaces.py:118
+msgid "Company about line 1"
+msgstr ""
+
+#: ./browser/interfaces.py:124
+msgid "Company about line 2"
+msgstr ""
+
+#: ./browser/interfaces.py:130
+msgid "Company about line 3"
+msgstr ""
+
+#: ./browser/interfaces.py:136
+msgid "Company about line 4"
+msgstr ""
+
+#: ./browser/interfaces.py:112
+msgid "Company name"
+msgstr ""
+
+#: ./browser/gallery.py:41
+msgid "Edit Gallery Portlet"
+msgstr ""
+
+#: ./browser/interfaces.py:154
+msgid "Facebook Fanpage URL"
+msgstr ""
+
+#: ./browser/interfaces.py:160
+msgid "Flickr Account URL"
+msgstr ""
+
+#: ./browser/gallery.py:27
+msgid "Gallery portlet for Cambrils Theme"
+msgstr ""
+
+#: ./browser/interfaces.py:39
+msgid "How many depth to search inside the root folder."
+msgstr ""
+
+#: ./browser/interfaces.py:25
+msgid "How many images to list."
+msgstr ""
+
+#: ./browser/interfaces.py:24
+msgid "Number of images to display"
+msgstr ""
+
+#: ./browser/interfaces.py:38
+msgid "Path depth"
+msgstr ""
+
+#: ./browser/interfaces.py:106
+msgid "Slideshow folder"
+msgstr ""
+
+#: ./browser/gallery.py:32
+msgid "This portlet displays an inline image gallery."
+msgstr ""
+
+#: ./browser/interfaces.py:166
+msgid "Twitter Stream URL"
+msgstr ""
+
+#: ./browser/interfaces.py:148
+msgid "Website author URL"
+msgstr ""
+
+#: ./browser/interfaces.py:142
+msgid "Website author name"
+msgstr ""
+
+#: ./browser/interfaces.py:172
+msgid "YouTube Channel URL"
+msgstr ""
+
+#. Default: "Facebook Fanpage"
+#: ./browser/templates/social_pages.pt:8
+msgid "facebook-fanpage"
+msgstr ""
+
+#. Default: "Flickr Page"
+#: ./browser/templates/social_pages.pt:16
+msgid "flickr-page"
+msgstr ""
+
+#. Default: "Name of your company, or website creator."
+#: ./browser/interfaces.py:143
+msgid "help_author_name"
+msgstr ""
+
+#. Default: "Website URL of your company or website creator."
+#: ./browser/interfaces.py:149
+msgid "help_author_url"
+msgstr ""
+
+#. Default: "Address or other information (line 1)."
+#: ./browser/interfaces.py:119
+msgid "help_company_about_line1"
+msgstr ""
+
+#. Default: "Address or other information (line 2)."
+#: ./browser/interfaces.py:125
+msgid "help_company_about_line2"
+msgstr ""
+
+#. Default: "Address or other information (line 3)."
+#: ./browser/interfaces.py:131
+msgid "help_company_about_line3"
+msgstr ""
+
+#. Default: "Address or other information (line 4)."
+#: ./browser/interfaces.py:137
+msgid "help_company_about_line4"
+msgstr ""
+
+#. Default: "Name of the website owner."
+#: ./browser/interfaces.py:113
+msgid "help_company_name"
+msgstr ""
+
+#. Default: "The url of your facebook fan page"
+#: ./browser/interfaces.py:155
+msgid "help_facebook_fanpage"
+msgstr ""
+
+#. Default: "The url of your flickr account page"
+#: ./browser/interfaces.py:161
+msgid "help_flickr_page"
+msgstr ""
+
+#. Default: "You may search for and choose a folder to act as the root of the image gallery.Leave blank to use the Plone site root."
+#: ./browser/interfaces.py:30
+msgid "help_navigation_root"
+msgstr ""
+
+#. Default: "Name of the folder containing the slideshow images."
+#: ./browser/interfaces.py:107
+msgid "help_slideshow_folder"
+msgstr ""
+
+#. Default: "The url of your twitter stream page."
+#: ./browser/interfaces.py:167
+msgid "help_twitter_stream"
+msgstr ""
+
+#. Default: "The url of your youtube channel page"
+#: ./browser/interfaces.py:173
+msgid "help_youtube_channel"
+msgstr ""
+
+#. Default: "Root node for image gallery"
+#: ./browser/interfaces.py:29
+msgid "label_navigation_root_path"
+msgstr ""
+
+#. Default: "Image gallery"
+#: ./browser/templates/gallery.pt:4
+msgid "title_image_gallery"
+msgstr ""
+
+#. Default: "Twitter Stream"
+#: ./browser/templates/social_pages.pt:24
+msgid "twitter-stream"
+msgstr ""
+
+#. Default: "YouTube Channel"
+#: ./browser/templates/social_pages.pt:32
+msgid "youtube-channel"
+msgstr ""
+

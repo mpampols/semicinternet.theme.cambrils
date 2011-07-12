@@ -4,7 +4,9 @@
     <div tal:define="slideshow_images python:hp_view.getSlideshowImageItems()"
          tal:condition="python:slideshow_images == False"
          id="slideshow">
-         <img src="slideshow-no-images.png" alt="No images found" title="No images found" width="960" height="238"/>
+         <img src="slideshow-no-images.png" alt="No images found" title="No images found" 
+              i18n:attributes="alt no-images-found; title no-images-found"
+              width="960" height="238"/>
     </div>
     <div tal:define="slideshow_images python:hp_view.getSlideshowImages()"
          tal:condition="slideshow_images"

@@ -1,6 +1,12 @@
 Changelog
 =========
 
+1.0.20110712
+------------
+- added catalan, english and spanish translations
+- fixed a bug with a missing .js resource for the slideshow
+- cleanup
+
 1.0.20110710
 ------------
 - added new image gallery portlet
