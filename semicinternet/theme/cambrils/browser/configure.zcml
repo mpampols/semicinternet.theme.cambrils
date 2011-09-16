@@ -60,6 +60,14 @@
       />
 
   <browser:viewlet
+      name=".theme.cambrils.dropdown_menu"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class=".viewlets.DropdownMenuViewlet"
+      layer=".interfaces.IThemeSpecific"
+      permission="zope2.View"
+      />
+
+  <browser:viewlet
       name=".theme.cambrils.footer"
       manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
       template="templates/footer.pt"

@@ -30,4 +30,8 @@
         cacheable="False" compression="safe" cookable="False"
         enabled="True" expression=""  inline="False"/>
 
+  <javascript id="jquery.cambrils.common.js"
+        cacheable="False" compression="safe" cookable="False"
+        enabled="True" expression="" inline="False"/>
+
 </object>

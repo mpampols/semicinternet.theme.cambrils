@@ -4,7 +4,7 @@
   <ul tal:condition="python:hp_view.showSocialIcons()">
     <li tal:define="facebook_fanpage python:hp_view.getFacebookFanpage()"
         tal:condition="facebook_fanpage">
-      <a href="#" tal:attributes="href facebook_fanpage">
+      <a href="#" tal:attributes="href facebook_fanpage" target="_blank">
         <img src="facebook.png" width="32" height="32" 
              alt="Facebook Fanpage" title="Facebook Fanpage"
              i18n:attributes="alt facebook-fanpage; title facebook-fanpage" />
@@ -12,7 +12,7 @@
     </li>
     <li tal:define="flickr_page python:hp_view.getFlickrPage()"
         tal:condition="flickr_page">
-      <a href="#" tal:attributes="href flickr_page">
+      <a href="#" tal:attributes="href flickr_page" target="_blank">
         <img src="flickr.png" width="32" height="32" 
              alt="Flickr Page" title="Flickr Page"
              i18n:attributes="alt flickr-page; title flickr-page" />
@@ -20,7 +20,7 @@
     </li>
     <li tal:define="twitter_stream python:hp_view.getTwitterStream()"
         tal:condition="twitter_stream">
-      <a href="#" tal:attributes="href twitter_stream">
+      <a href="#" tal:attributes="href twitter_stream" target="_blank">
         <img src="twitter.png" width="32" height="32" 
              alt="Twitter Stream" title="Twitter Stream"
              i18n:attributes="alt twitter-stream; title twitter-stream" />
@@ -28,7 +28,7 @@
     </li>
     <li tal:define="youtube_channel python:hp_view.getYoutubeChannel()"
         tal:condition="youtube_channel">
-      <a href="#" tal:attributes="href youtube_channel">
+      <a href="#" tal:attributes="href youtube_channel" target="_blank">
         <img src="youtube.png" width="32" height="32" 
              alt="YouTube Channel" title="YouTube Channel"
              i18n:attributes="alt youtube-channel;title youtube-channel" />

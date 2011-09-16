@@ -4,8 +4,15 @@
     <viewlet name="cambrils.footer" />
     <viewlet name="cambrils.colophon" />
   </order>
+  <order manager="plone.portalheader" skinname="SEMIC Internet Theme Cambrils">
+    <viewlet name="cambrils.dropdown_menu" />
+  </order>
+  <hidden manager="plone.global_sections" skinname="SEMIC Internet Theme Cambrils">
+    <viewlet name="plone.global_sections" />
+  </hidden>
   <hidden manager="plone.portalheader" skinname="SEMIC Internet Theme Cambrils">
     <viewlet name="plone.site_actions"/>
+    <viewlet name="plone.global_sections"/>
   </hidden>
   <hidden manager="plone.portalfooter" skinname="SEMIC Internet Theme Cambrils">
     <viewlet name="plone.footer"/>

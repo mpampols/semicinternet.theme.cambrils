@@ -2,6 +2,7 @@ logoName:string=logo.png
 global_color:string=#3A678D
 linkColor:string=#0c5390
 linkColorHover:string=#f99734
+linkColorMenu:string=#FFFFFF
 plone_skin:string=Cambrils Theme
 logoName:string=logo.png
 fontFamily:string=Arial, Verdana, sans-serif

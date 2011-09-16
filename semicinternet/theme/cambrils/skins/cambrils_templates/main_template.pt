@@ -33,11 +33,6 @@
   <metal:headslot define-slot="head_slot" />
   <metal:styleslot define-slot="style_slot" />
   <metal:javascriptslot define-slot="javascript_head_slot" />
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $("a.portletGalleryImage").fancybox({'type':'image'});
-    });
-  </script>
   <meta name="viewport" content="width=device-width; initial-scale=0.6666; maximum-scale=1.0; minimum-scale=0.6666" />
   <meta name="generator" content="Plone - http://plone.org" />
   </tal:notajax>
@@ -123,7 +118,31 @@
   <script type="text/javascript">
     (function($) {
       $(document).ready(function() {
-  	   $(".scrollable").scrollable({ circular:true }).navigator(".navi");
+        $(".scrollable").scrollable({ circular:true }).navigator(".navi");
+        $("#dropdown-menu #portal-globalnav.firstlevel li").hover(
+          function () {
+            $(this).find('.secondlevel.hidden').addClass("shown");
+            $(this).find('.secondlevel.hidden').removeClass("hidden");
+            $(this).find('.menutitle').addClass("active");
+          },
+          function () {
+            $(this).find('.secondlevel.shown').addClass("hidden");
+            $(this).find('.secondlevel.hidden').removeClass("shown");
+            $(this).find('.menutitle').removeClass("active");
+          }
+        );
+        $("#dropdown-menu #portal-globalnav ul.secondlevel li").hover(
+          function () {
+            $(this).find('ul.thirdlevel.hidden').addClass("shown");
+            $(this).find('ul.thirdlevel.hidden').removeClass("hidden");
+            $(this).find('.arrow').addClass("active");
+          },
+          function () {
+            $(this).find('ul.thirdlevel.shown').addClass("hidden");
+            $(this).find('ul.thirdlevel.hidden').removeClass("shown");
+            $(this).find('.arrow').removeClass("active");
+          }
+        );
       });
     })(jQuery);
     </script>

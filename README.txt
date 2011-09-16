@@ -12,6 +12,7 @@ Main features
 - Tested in the most popular browsers.
 - Customizable image gallery portlet with fancybox (fancybox.net)
 - Customizable social pages viewlet.
+- Customizable drop down menu
 - Change only one color code variable in base_properties.props, and it will automatically change that color everywhere in the theme (menu elements, list elements, links, calendar, lists...)
 - Automatic header slideshow with customizable images folder via Plone Control Panel.
 - Highly customizable, tested in a wide range of different viewlets and portlets combinations and positions.
@@ -19,12 +20,16 @@ Main features
         
 Tested in browsers
 ------------------
-- Firefox 4.0+
+- Firefox 3.0+
 - Opera 10+
 - Chrome 12+
-- Safari 5
+- Safari 5+
 - IE 8+
-        
+
+Dropdown Menu
+-------------
+Dropdown menu viewlet with customizable levels. You can disable the effect or enable it with 1 or 2 levels.
+
 Image Gallery Portlet
 ---------------------
 There's a new portlet available that builds an image gallery with the lightbox effect using fancybox.
@@ -53,5 +58,5 @@ portal_skins/cambrils_styles/base_properties
         
 Authors
 -------
-- Marc Pampols <mpampols@semicinternet.com>
-- Marc Vicente <mvicente@semicinternet.com
+- Marc Pampols <mpampols@semicinternet.com> (product)
+- Marc Vicente <mvicente@semicinternet.com> (css)

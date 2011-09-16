@@ -19,3 +19,6 @@ class GlobalSectionsViewlet(common.GlobalSectionsViewlet):
 
 class SocialPagesViewlet(common.ViewletBase):
     render = ViewPageTemplateFile('templates/social_pages.pt')
+
+class DropdownMenuViewlet(common.ViewletBase):
+    render = ViewPageTemplateFile('templates/dropdown_menu.pt')

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0.20110710\n"
-"POT-Creation-Date: 2011-07-12 15:12+0000\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "PO-Revision-Date: 2011-07-12 15:12+0000\n"
 "Last-Translator: Marc Pampols <mpampols@semicinternet.com>\n"
 "Language-Team: Catalan <mpampols@semicinternet.com>\n"
@@ -26,23 +26,23 @@ msgstr "Plantilla Cambrils"
 msgid "Cambrils settings"
 msgstr "Paràmetres de la plantilla Cambrils"
 
-#: ./browser/interfaces.py:118
+#: ./browser/interfaces.py:133
 msgid "Company about line 1"
 msgstr "Línia 1 amb informació de l'empresa"
 
-#: ./browser/interfaces.py:124
+#: ./browser/interfaces.py:139
 msgid "Company about line 2"
 msgstr "Línia 2 amb informació de l'empresa"
 
-#: ./browser/interfaces.py:130
+#: ./browser/interfaces.py:145
 msgid "Company about line 3"
 msgstr "Línia 3 amb informació de l'empresa"
 
-#: ./browser/interfaces.py:136
+#: ./browser/interfaces.py:151
 msgid "Company about line 4"
 msgstr "Línia 4 amb informació de l'empresa"
 
-#: ./browser/interfaces.py:112
+#: ./browser/interfaces.py:127
 msgid "Company name"
 msgstr "Nom de l'empresa"
 
@@ -50,11 +50,11 @@ msgstr "Nom de l'empresa"
 msgid "Edit Gallery Portlet"
 msgstr "Modifica portlet de galeria"
 
-#: ./browser/interfaces.py:154
+#: ./browser/interfaces.py:169
 msgid "Facebook Fanpage URL"
 msgstr "URL de la pàgina de fans a Facebook"
 
-#: ./browser/interfaces.py:160
+#: ./browser/interfaces.py:175
 msgid "Flickr Account URL"
 msgstr "URL del compte de Flickr"
 
@@ -74,11 +74,16 @@ msgstr "Quantes imatges vols mostrar?"
 msgid "Number of images to display"
 msgstr "Nombre d'imatges a mostrar"
 
+#: ./browser/interfaces.py:114
+msgid "Number of levels in dropdown menu"
+msgstr "Nombre de nivells a mostrar al menú desplegable (0 desactiva el desplegable)"
+
 #: ./browser/interfaces.py:38
 msgid "Path depth"
 msgstr "Profunditat de cerca"
 
-#: ./browser/interfaces.py:106
+#. Default: "Folder containing images for the slideshow"
+#: ./browser/interfaces.py:121
 msgid "Slideshow folder"
 msgstr "Carpeta que conté les imatges del slideshow"
 
@@ -86,19 +91,19 @@ msgstr "Carpeta que conté les imatges del slideshow"
 msgid "This portlet displays an inline image gallery."
 msgstr "Aquest portlet mostra una galeria d'imatges"
 
-#: ./browser/interfaces.py:166
+#: ./browser/interfaces.py:181
 msgid "Twitter Stream URL"
 msgstr "URL de la pàgina de Twitter"
 
-#: ./browser/interfaces.py:148
+#: ./browser/interfaces.py:163
 msgid "Website author URL"
 msgstr "URL de la pàgina web del autor"
 
-#: ./browser/interfaces.py:142
+#: ./browser/interfaces.py:157
 msgid "Website author name"
 msgstr "Nom de la pàgina web del autor"
 
-#: ./browser/interfaces.py:172
+#: ./browser/interfaces.py:187
 msgid "YouTube Channel URL"
 msgstr "URL del canal de YouTube"
 
@@ -113,47 +118,53 @@ msgid "flickr-page"
 msgstr "Pàgina de Flickr"
 
 #. Default: "Name of your company, or website creator."
-#: ./browser/interfaces.py:143
+#: ./browser/interfaces.py:158
 msgid "help_author_name"
 msgstr "Nom de la teva empresa, o del creador del web."
 
 #. Default: "Website URL of your company or website creator."
-#: ./browser/interfaces.py:149
+#: ./browser/interfaces.py:164
 msgid "help_author_url"
 msgstr "URL de la pàgina web de l'empresa o del creador del web."
 
 #. Default: "Address or other information (line 1)."
-#: ./browser/interfaces.py:119
+#: ./browser/interfaces.py:134
 msgid "help_company_about_line1"
 msgstr "Adreça o altra informació (línia 1)."
 
 #. Default: "Address or other information (line 2)."
-#: ./browser/interfaces.py:125
+#: ./browser/interfaces.py:140
 msgid "help_company_about_line2"
 msgstr "Adreça o altra informació (línia 2)."
 
 #. Default: "Address or other information (line 3)."
-#: ./browser/interfaces.py:131
+#: ./browser/interfaces.py:146
 msgid "help_company_about_line3"
 msgstr "Adreça o altra informació (línia 3)."
 
 #. Default: "Address or other information (line 4)."
-#: ./browser/interfaces.py:137
+#: ./browser/interfaces.py:152
 msgid "help_company_about_line4"
 msgstr "Adreça o altra informació (línia 4)."
 
 #. Default: "Name of the website owner."
-#: ./browser/interfaces.py:113
+#: ./browser/interfaces.py:128
 msgid "help_company_name"
 msgstr "Nom del propietari del web."
 
+#. Default: "Select the number of levels, 0 to disable the dropdown effect"
+#: ./browser/interfaces.py:115
+#, fuzzy
+msgid "help_dropdown_menu_levels"
+msgstr "Escriu el nombre de nivells a mostrar (1, 2 o 3 quedaran bé)"
+
 #. Default: "The url of your facebook fan page"
-#: ./browser/interfaces.py:155
+#: ./browser/interfaces.py:170
 msgid "help_facebook_fanpage"
 msgstr "URL de la pàgina de fans de Facebook"
 
 #. Default: "The url of your flickr account page"
-#: ./browser/interfaces.py:161
+#: ./browser/interfaces.py:176
 msgid "help_flickr_page"
 msgstr "URL del compte de Flickr"
 
@@ -163,19 +174,24 @@ msgid "help_navigation_root"
 msgstr "Pots cercar i elegir la carpeta que actuarà com a l'arrèl de la galeria d'imatges, o bé deixar-ho en blanc per a utilitzar l'arrèl de Plone."
 
 #. Default: "Name of the folder containing the slideshow images."
-#: ./browser/interfaces.py:107
+#: ./browser/interfaces.py:122
 msgid "help_slideshow_folder"
 msgstr "Nom (ID) de la carpeta que conté les imatges per al slideshow"
 
 #. Default: "The url of your twitter stream page."
-#: ./browser/interfaces.py:167
+#: ./browser/interfaces.py:182
 msgid "help_twitter_stream"
 msgstr "URL de la pàgina de Twitter."
 
 #. Default: "The url of your youtube channel page"
-#: ./browser/interfaces.py:173
+#: ./browser/interfaces.py:188
 msgid "help_youtube_channel"
 msgstr "URL de la pàgina de YouTube"
+
+#. Default: "Home"
+#: ./browser/templates/dropdown_menu.pt:8
+msgid "home"
+msgstr "Inici"
 
 #. Default: "Root node for image gallery"
 #: ./browser/interfaces.py:29

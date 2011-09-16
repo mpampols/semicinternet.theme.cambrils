@@ -1,11 +1,10 @@
 <?xml version="1.0"?>
 <import-steps>
   <import-step id="semicinternet.theme.cambrils.uninstall"
-               version="1.0.20110712"
+               version="1.1.20110824"
                handler="semicinternet.theme.cambrils.setuphandlers.uninstallVarious"
                title="Cambrils Theme: miscellaneous uninstall steps">
     <dependency step="skins" />
     Various uninstall steps that are not handled by GS import/export handlers.
   </import-step>
 </import-steps>
-

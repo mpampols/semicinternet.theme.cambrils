@@ -31,7 +31,7 @@ li {list-style-type:none;display:inline;line-height:1.6em;}
 #header #portal-header #portal-languageselector li {margin-right:2px;}
 #header #portal-header #portal-languageselector li a {color:<dtml-var global_color>;border-radius:3px 3px 3px 3px;background-color:<dtml-var backgroundColor>;padding:2px 6px;}
 #header #portal-header #portal-languageselector li a:hover,
-#header #portal-header #portal-languageselector li.currentLanguage a {color:<dtml-var backgroundColor>;border-radius:3px 3px 3px 3px;background-color:<dtml-var global_color>;padding:2px 6px;}
+#header #portal-header #portal-languageselector li.currentLanguage a {color:<dtml-var linkColor>;border-radius:3px 3px 3px 3px;background-color:<dtml-var global_color>;padding:2px 6px;}
 #header #portal-header #portal-personaltools {background:<dtml-var backgroundZones>;border-bottom-left-radius:0.5em;border-bottom-right-radius:0.5em;float:right;font-size:75%;padding:0.25em 0.5em;position:relative;right:0;top:0;z-index:3;}
 #header #portal-header #portal-personaltools dl.actionMenu.activated dd {border-radius:0.5em 0em 0.5em 0.5em;min-width:100%;position:absolute;top:30px;width:auto;}
 #header #portal-header #portal-personaltools dd a:hover {border-radius:0.5em 0.5em 0.5em 0.5em;}
@@ -43,10 +43,13 @@ li {list-style-type:none;display:inline;line-height:1.6em;}
 #header #portal-header #portal-personaltools dd a:hover {background:#205c90;color:<dtml-var backgroundColor>;}
 #header #portal-header #portal-globalnav{margin:0;padding:0;position:relative;line-height:18px;width:100%;clear:both;background:<dtml-var global_color>;height:36px;line-height:36px;font-size:80%;font-weight:bold;margin-bottom:1px;}
 #header #portal-header #portal-globalnav li {float:left;display:inline;position:relative;line-height:36px;border-right:solid 1px #fff;}
-#header #portal-header #portal-globalnav li a {min-width:0px;border:none;background:<dtml-var global_color>;color:#fff;text-shadow:1px 1px 2px #000000;text-decoration:none;padding:0 15px 0;} 
+#header #portal-header #portal-globalnav li a {min-width:0px;border:none;background:<dtml-var global_color>;color:<dtml-var linkColorMenu>;text-decoration:none;padding:0 15px 0;} 
 #header #portal-header #portal-globalnav li a:hover, 
-#header #portal-header #portal-globalnav li.selected a {color:#fff;text-shadow:#b86d21 1px 1px 0;background:#e98a2a;}
-#header #slideshow{border-bottom:1px solid <dtml-var linkColorHover>;border-top:1px solid <dtml-var linkColorHover>;padding:1px 0;clear:both;}
+#header #portal-header #portal-globalnav li.selected a {color:#fff;background:#e98a2a;}
+#header #portal-header #portal-globalnav li a.menutitle.active,
+#header #portal-header #portal-globalnav li a.arrow.active {color:#fff}
+
+#header #slideshow{border-bottom:1px solid <dtml-var linkColorHover>;padding:0px 0;clear:both;}
 #header #portal-siteactions {font-size:85%;padding-bottom:2em;text-align:center;}
 #header #portal-siteactions li {margin-right:0.5em;}
 #header #portal-siteactions li a:hover {color:#75ad0a}
@@ -103,7 +106,7 @@ li {list-style-type:none;display:inline;line-height:1.6em;}
 #container #maincolumn #content .visualNoMarker {list-style:none;margin-left:0;}
 
 /*breadcrumbs*/
-#portal-breadcrumbs {font-size:70%;margin:0 0 20px 0px;text-transform:uppercase;line-height:1.5em;}
+#portal-breadcrumbs {font-size:70%;margin:0 0 20px 3px;text-transform:uppercase;line-height:1.5em;}
 #portal-breadcrumbs a {border-bottom:none;display:inline-block;}
 #portal-breadcrumbs a:hover{color:<dtml-var linkColorHover>}
 
@@ -279,7 +282,7 @@ div.listingBar a {display:inline-block;padding:0.25em 0.5em;border:0.1em solid <
 div.listingBar a:hover {color:<dtml-var backgroundColor>;background-color:#329fd7;border-color:#329fd7;}
 
 /* portlets */
-dl.portlet {border-bottom:1px solid <dtml-var backgroundZones>;font-size:75%;line-height:18px;margin-bottom:15px;padding-bottom:10px;}
+dl.portlet {font-size:75%;line-height:18px;margin-bottom:15px;padding-bottom:10px;}
 dl.portletError {background-color:#FFA500;}
 dl.portlet dt,
 div.portletAssignments div.portletHeader {padding:0;background:none;line-height:normal;text-transform:uppercase;margin-bottom:10px;}
@@ -319,7 +322,7 @@ a.managePortletsFallback {display:inline-block;}
 
 /*search*/
 .LSBox input.searchField {background-color:<dtml-var backgroundColor>;border:1px solid #264C6C;border-radius:3px 3px 3px 3px;height:19px;padding:4px 5px;position:relative;top:1px;}
-.LSBox input[type=submit] {background-color:<dtml-var global_color>;border:1px solid #166FA9;border-radius:4px 4px 4px 4px;box-shadow:0 1px 1px #84C7F4 inset;color:<dtml-var backgroundColor>;cursor:pointer;font-size:100%;font-weight:bold;padding:5px 10px;text-shadow:1px 1px 1px #166FA9;}
+.LSBox input[type=submit] {background-color: <dtml-var global_color>;border: 1px solid #166FA9;border-radius: 4px 4px 4px 4px;box-shadow: 0 1px 1px #84C7F4 inset;color: <dtml-var backgroundColor>;cursor: pointer;font-size: 100%;font-weight: bold;padding: 5px 12px 4px 9px;position: relative;text-shadow: 1px 1px 1px #166FA9;top: 2px;}
 .LSBox input[type=submit]:hover {background-color:#E98A2A;border:1px solid <dtml-var linkColorHover>;box-shadow:0 1px 1px <dtml-var linkColorHover> inset;text-shadow:1px 1px 1px #000000;}
 #portal-searchbox {float:right;text-align:left;clear:right;margin:1.2em 0;font-size:80%;position:relative;}
 #portal-searchbox form {white-space:nowrap;}
@@ -334,7 +337,7 @@ dl.portlet ul.navTree li a:hover {color:<dtml-var linkColorHover>;text-decoratio
 dl.portletNavigationTree{border:none;}
 dl.portletNavigationTree dd.portletItem {padding:0;}
 dl.portlet ul.navTreeLevel0{border-top:1px solid <dtml-var backgroundZones>}
-dl.portlet ul.navTreeLevel0 > .navTreeItem {padding:10px 0px;border-bottom:1px solid <dtml-var backgroundZones>;font-weight:bold;}
+dl.portlet ul.navTreeLevel0 > .navTreeItem {padding:10px 0px !important;border-bottom:1px solid <dtml-var backgroundZones>;font-weight:bold;}
 dl.portlet ul.navTreeLevel1{border-left:1px solid <dtml-var backgroundZones>;border-top:none;margin:10px 0 5px 10px;padding-left:10px;}
 dl.portlet ul.navTreeLevel1 .navTreeItem {padding:0px;line-height:2em;font-weight:normal;}
 dl.portlet ul.navTree .navTreeCurrentItem {color:#000000;margin:0px;background-color:transparent;border:0px;}
@@ -358,19 +361,19 @@ dl.portlet ul.navTree .navTreeCurrentItem {color:#000000;margin:0px;background-c
 .ploneCalendar .todaynoevent {border:2px solid <dtml-var global_color>;}
 
 /*sitemap*/
-#portal-sitemap {list-style:none;margin-left:0;font-size:130%;font-weight:bold;}
-#portal-sitemap li {list-style:none;margin-left:0;}
-#portal-sitemap a {border-bottom:none;display:block;}
-#portal-sitemap > li {border-bottom:1px solid <dtml-var backgroundZones>;line-height:1.8em;padding:0.25em 1em;margin-bottom:0;}
+#portal-sitemap {list-style:none;margin-left:0;font-size:130%;font-weight:bold}
+#portal-sitemap li {list-style:none;margin-left:0}
+#portal-sitemap a {border-bottom:none;display:block}
+#portal-sitemap > li {border-bottom:1px solid <dtml-var backgroundZones>;line-height:1.8em;padding:0.25em 1em;margin-bottom:0}
 #portal-sitemap .navTreeLevel2,
-#portal-sitemap .navTreeLevel2 ul {font-size:85%;font-weight:normal;margin-bottom:0;padding:0.25em 0;}
+#portal-sitemap .navTreeLevel2 ul {font-size:85%;font-weight:normal;margin-bottom:0;padding:0.25em 0}
 
-/* portlet gallery */
-.portletGallery a img {margin-top: -1px;}
-.portletGallery a img:hover {-webkit-transform: scale(1.35);-webkit-transition-timing-function: ease-out;-webkit-transition-duration: 150ms;-moz-transform: scale(1.35);-moz-transition-timing-function: ease-out;-moz-transition-duration: 150ms;-moz-box-shadow: 0px 0px 10px #FFF;-webkit-box-shadow: 0px 0px 10px #FFF;}
+/*portlet gallery*/
+.portletGallery a img {margin-top: -1px}
+.portletGallery a img:hover {-webkit-transform: scale(1.35);-webkit-transition-timing-function: ease-out;-webkit-transition-duration: 150ms;-moz-transform: scale(1.35);-moz-transition-timing-function: ease-out;-moz-transition-duration: 150ms;-moz-box-shadow: 0px 0px 10px #FFF;-webkit-box-shadow: 0px 0px 10px #FFF}
 
 /* social pages */
-#social-pages {clear: right;float: right;}
+#social-pages {clear: right;float: right}
 
 /* footer */
 #footer{width:960px;margin:0 auto;text-align:left;color:<dtml-var fontColorAlternative>;}
@@ -380,5 +383,21 @@ dl.portlet ul.navTree .navTreeCurrentItem {color:#000000;margin:0px;background-c
 #footer #portal-colophon {font-size:70%;text-align:center;margin-bottom:1em;padding-top:1em;border-top:1px solid <dtml-var linkColorHover>;}
 #footer #portal-colophon li {padding:0 0.75em;}
 #footer #portal-colophon a {color:<dtml-var fontColorAlternative>;}
+
+/*dropdown menu*/
+#portal-globalnav.firstlevel a.menutitle {background-color:#3A678D}
+#portal-globalnav.firstlevel a.menutitle.active {background-color:#E98A2A !important}
+#portal-globalnav a.active {background-color:#E98A2A}
+#portal-globalnav .show {display:block}
+#portal-globalnav .hidden {display:none}
+#portal-globalnav .secondlevel {position:absolute;left:0px !important;top:36px !important;}
+#portal-globalnav .thirdlevel {left:200px;position:absolute;top:0px}
+#portal-globalnav .secondlevel li {display: inline-block !important;width: 200px;border-left:0px;border-right:0px !important;}
+#portal-globalnav .secondlevel li a {display: block}
+#portal-globalnav .secondlevel li a.arrow {background-image: url("arrow.png") !important;background-position: 181px center !important;background-repeat: no-repeat !important}
+#portal-globalnav .secondlevel li a.arrow.active{background-color:#E98A2A !important}
+
+/* ie5.5-6 png fix */
+img, div, a { behavior: url("iepngfix.htc") }
 
 /* </dtml-with> */

@@ -1,0 +1,45 @@
+<div id="dropdown-menu" metal:define-macro="dropdown_menu"
+     tal:define="hp_view context/@@hp_view"
+     i18n:domain="semicinternet.theme.cambrils">
+    <ul id="portal-globalnav"
+        class="firstlevel"
+        tal:define="first_level python:hp_view.getDropdownMenu();
+                    max_levels python:hp_view.getDropDownMenuLevels()">
+        <li><a href="#"
+               tal:attributes="href string:${context/portal_url}"
+               i18n:translate="home">Home</a></li>
+        <li tal:repeat="first_element first_level">
+	    <a href="#" 
+	       class="menutitle" 
+	       tal:content="first_element/Title"
+	       tal:attributes="href python:first_element.getObject().absolute_url()">Option 1</a>
+	    <ul tal:define="second_level python:int(max_levels) > 0 and hp_view.getDropdownMenu(actual_base_path=first_element.getPath())"
+            tal:condition="second_level"
+            class="secondlevel hidden">
+                <li tal:repeat="second_element second_level">
+                  <a href="#"
+                     tal:content="second_element/Title"
+                     tal:define="has_third_level python:max_levels > 0 and hp_view.getDropdownMenu(actual_base_path=second_element.getPath())"
+                     tal:condition="has_third_level"
+		             tal:attributes="href  python:second_element.getObject().absolute_url();
+                                     class python:int(max_levels) > 1 and 'arrow' or 'no-arrow'"
+                     class="arrow">Option 1.2</a>
+                  <a href="#"
+                     tal:content="second_element/Title"
+                     tal:condition="not:has_third_level"
+		             tal:attributes="href python:second_element.getObject().absolute_url()"
+                     tal:define="has_third_level python:hp_view.getDropdownMenu(actual_base_path=second_element.getPath())">Option 1.2</a>
+                    <ul tal:condition="third_level"
+                        tal:define="third_level python:int(max_levels) > 1 and hp_view.getDropdownMenu(actual_base_path=second_element.getPath())"
+                        class="thirdlevel hidden">
+                        <li tal:repeat="third_element third_level">
+                            <a href="#"
+			                   tal:attributes="href python:third_element.getObject().absolute_url()"
+                               tal:content="third_element/Title">Option 1.2.3</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>

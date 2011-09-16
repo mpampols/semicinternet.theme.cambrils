@@ -1,6 +1,8 @@
 <dl class="portlet portletGallery"
     i18n:domain="semicinternet.theme.cambrils">
-  <dt class="portletHeader">
+  <dt class="portletHeader"
+      tal:define="hasImages view/gallery_items|nothing"
+      tal:condition="hasImages">
     <span i18n:translate="title_image_gallery">Image gallery</span>
   </dt>
   <dd>
@@ -12,8 +14,9 @@
       <a href="#"
          type="image/jpeg"
          tal:attributes="href string:${obj/getURL};"
+         tal:condition="obj"
          class="portletGalleryImage">
-        <img width="64"
+        <img width="60"
              tal:attributes="src string:${obj/getURL}/image_thumb;
                              alt string:${obj/Title};" />
       </a>

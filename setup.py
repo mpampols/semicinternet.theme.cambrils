@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.0.20110712'
+version = '1.1.20110916'
 
 setup(name='semicinternet.theme.cambrils',
       version=version,
@@ -14,7 +14,7 @@ setup(name='semicinternet.theme.cambrils',
         "Framework :: Plone",
         "Programming Language :: Python",
         ],
-      keywords='semic internet plone theme',
+      keywords='semic internet plone theme cambrils',
       author='Marc Pampols',
       author_email='mpampols@semicinternet.com',
       url='https://github.com/mpampols/semicinternet.theme.cambrils',

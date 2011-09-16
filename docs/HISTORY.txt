@@ -1,6 +1,19 @@
 Changelog
 =========
 
+1.1.20110916
+------------
+- fixed a bug in gallery portlet that rendered an error if no images found
+- fixed and refined some css
+- added a drop down level selector, you can also disable the effect selecting 0
+- fixed some catalan and spanish translations
+- added a new linkColorMenu to base_properties.props
+
+1.1.20110824
+------------
+- added a new dropdown top menu with customizable number of levels
+- now you can customize the slideshow contents for any subfolder (see README.TXT)
+
 1.0.20110712
 ------------
 - added catalan, english and spanish translations
